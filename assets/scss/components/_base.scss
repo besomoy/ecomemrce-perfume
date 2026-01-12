@@ -24,6 +24,11 @@ a {
     color: inherit;
 }
 
+// Container Override
+.container {
+    max-width: 1520px !important;
+}
+
 // Standard Color Utilities
 .text-primary {
     color: $primary !important;

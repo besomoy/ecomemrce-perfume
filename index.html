@@ -25,24 +25,56 @@
     <nav class="navbar-custom" id="navbar">
         <div class="container d-flex justify-content-between align-items-center">
             <a href="#" class="logo">
-                <img src="./assets/images/logo.svg" alt="AURUM & VERDE" height="40">
+                <img src="./assets/images/logo.svg" alt="AURUM & VERDE" height="28">
             </a>
 
             <div class="nav-links">
-                <a href="#categories">Categories</a>
-                <a href="#collections">Collections</a>
-                <a href="#shop">Shop</a>
-                <a href="#journal">Journal</a>
+                <div class="nav-item-has-dropdown">
+                    <a href="index.html">Home <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="index.html">Luxury Default</a>
+                        <a href="index-2.html">Modern Atelier</a>
+                        <a href="#">Minimal House</a>
+                    </div>
+                </div>
+                <div class="nav-item-has-dropdown">
+                    <a href="#shop">Shop <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="#">New Arrivals</a>
+                        <a href="#">Best Sellers</a>
+                        <a href="#">Collections</a>
+                        <a href="#">Fragrance Finder</a>
+                    </div>
+                </div>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                <div class="nav-item-has-dropdown">
+                    <a href="#blog">Blog <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="#">Journal Standard</a>
+                        <a href="#">Masonry Grid</a>
+                        <a href="#">Scent Stories</a>
+                    </div>
+                </div>
+                <div class="nav-item-has-dropdown">
+                    <a href="#">All Pages <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="#">FAQ</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Sale</a>
+                    </div>
+                </div>
             </div>
 
             <div class="nav-icons">
-                <button><i data-lucide="user" width="20"></i></button>
-                <button><i data-lucide="search" width="20"></i></button>
-                <button class="position-relative">
+                <button title="Account"><i data-lucide="user" width="20"></i></button>
+                <button title="Search"><i data-lucide="search" width="20"></i></button>
+                <button class="position-relative" title="Cart">
                     <i data-lucide="shopping-bag" width="20"></i>
                     <span class="cart-badge">0</span>
                 </button>
-                <button class="d-md-none"><i data-lucide="menu" width="22"></i></button>
+                <button class="d-lg-none" title="Menu"><i data-lucide="menu" width="22"></i></button>
             </div>
         </div>
     </nav>
