@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURUM & VERDE | Luxury Perfumery</title>
+    <!-- Bootstrap CSS -->
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS (Compiled from SCSS) -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-custom" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="logo">AURUM & VERDE</a>
+
+            <div class="nav-links">
+                <a href="#categories">Categories</a>
+                <a href="#collections">Collections</a>
+                <a href="#shop">Shop</a>
+                <a href="#journal">Journal</a>
+            </div>
+
+            <div class="nav-icons">
+                <button><i data-lucide="user" width="18"></i></button>
+                <button><i data-lucide="search" width="18"></i></button>
+                <button class="position-relative">
+                    <i data-lucide="shopping-bag" width="18"></i>
+                    <span class="cart-badge">0</span>
+                </button>
+                <button class="d-md-none"><i data-lucide="menu" width="20"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div class="hero-slider swiper">
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1: Original Gold -->
+            <div class="swiper-slide">
+                <div class="hero-header">
+                    <div class="bg-overlay"></div>
+                    <img class="hero-bg-img" src="./public/images/hero.png" alt="Luxury Perfume">
+                    <div class="hero-content">
+                        <div class="mb-4 overflow-hidden">
+                            <p class="text-luxury-gold text-uppercase tracking-ultra small fw-bold"
+                                data-swiper-parallax="-200">
+                                L'Essence de l'Élégance
+                            </p>
+                        </div>
+                        <h1 class="display-1 mb-4" style="line-height: 1;">
+                            <span class="d-block" data-swiper-parallax="-300">Artisan</span>
+                            <span class="d-block fst-italic text-luxury-gold"
+                                data-swiper-parallax="-400">Perfumery</span>
+                        </h1>
+                        <p class="lead mb-5 text-gray-200 mx-auto" style="max-width: 600px;"
+                            data-swiper-parallax="-500">
+                            Experience the pinnacle of olfactory craftsmanship. <br> Hand-poured in Paris, curated for
+                            the world.
+                        </p>
+                        <div data-swiper-parallax="-600">
+                            <a href="#categories" class="btn-primary-custom">Explore Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Noir -->
+            <div class="swiper-slide">
+                <div class="hero-header">
+                    <div class="bg-overlay"></div>
+                    <img class="hero-bg-img" src="./public/images/hero_noir.png" alt="Noir Absolu">
+                    <div class="hero-content">
+                        <div class="mb-4 overflow-hidden">
+                            <p class="text-white text-uppercase tracking-ultra small fw-bold"
+                                data-swiper-parallax="-200">
+                                The Night Collection
+                            </p>
+                        </div>
+                        <h1 class="display-1 mb-4 text-white" style="line-height: 1;">
+                            <span class="d-block" data-swiper-parallax="-300">Noir</span>
+                            <span class="d-block fst-italic text-gray-400" data-swiper-parallax="-400">Absolu</span>
+                        </h1>
+                        <p class="lead mb-5 text-gray-300 mx-auto" style="max-width: 600px;"
+                            data-swiper-parallax="-500">
+                            A mysterious blend of smoked oud and rare spices. <br> For those who embrace the shadow.
+                        </p>
+                        <div data-swiper-parallax="-600">
+                            <a href="#" class="btn-primary-custom"
+                                style="background-color: white; color: black;">Discover Noir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Azure -->
+            <div class="swiper-slide">
+                <div class="hero-header">
+                    <div class="bg-overlay"></div>
+                    <img class="hero-bg-img" src="./public/images/hero_azure.png" alt="Azure Crystal">
+                    <div class="hero-content">
+                        <div class="mb-4 overflow-hidden">
+                            <p class="text-luxury-gold text-uppercase tracking-ultra small fw-bold"
+                                data-swiper-parallax="-200">
+                                Coastal Dreams
+                            </p>
+                        </div>
+                        <h1 class="display-1 mb-4 text-white" style="line-height: 1;">
+                            <span class="d-block" data-swiper-parallax="-300">Azure</span>
+                            <span class="d-block fst-italic text-luxury-gold" data-swiper-parallax="-400">Crystal</span>
+                        </h1>
+                        <p class="lead mb-5 text-white mx-auto fw-medium text-shadow"
+                            style="max-width: 600px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);"
+                            data-swiper-parallax="-500">
+                            Captured from the pristine shores of the Mediterranean. <br> Fresh, vibrant, and infinitely
+                            free.
+                        </p>
+                        <div data-swiper-parallax="-600">
+                            <a href="#" class="btn-primary-custom" style="background-color: white; color: #052b21;">Shop
+                                Azure</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Arrows -->
+        <div class="swiper-button-next text-luxury-gold"></div>
+        <div class="swiper-button-prev text-luxury-gold"></div>
+    </div>
+
+    <!-- 3D Categories Section -->
+    <section id="categories" class="py-section bg-cream-light">
+        <div class="container">
+            <div class="text-center mb-section reveal">
+                <span class="text-luxury-green text-uppercase tracking-widest-custom small fw-bold">Direct from the
+                    Atelier</span>
+                <h2 class="display-4 text-luxury-darkGreen mt-3 mb-4">Olfactory Families</h2>
+                <div class="mx-auto bg-luxury-gold" style="width: 80px; height: 1px;"></div>
+            </div>
+
+            <div class="row g-5 perspective-container">
+                <!-- Floral -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card-3d">
+                        <div class="card-3d-wrapper bg-white">
+                            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800"
+                                class="floating-img" alt="Floral">
+                            <div class="card-text-3d">
+                                <h3 class="h2 fst-italic text-luxury-darkGreen">Floral</h3>
+                                <p class="small text-uppercase tracking-widest-custom text-gray-500 mt-3 fw-semibold">
+                                    Rose · Jasmine · Lily</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Woody -->
+                <div class="col-12 col-md-6 col-lg-3 mt-lg-5 pt-lg-5">
+                    <div class="card-3d">
+                        <div class="card-3d-wrapper" style="background-color: #eeeae3;">
+                            <img src="https://images.unsplash.com/photo-1557827983-012eb6ea8dc1?auto=format&fit=crop&q=80&w=800"
+                                class="floating-img" alt="Woody">
+                            <div class="card-text-3d">
+                                <h3 class="h2 fst-italic text-luxury-darkGreen">Woody</h3>
+                                <p class="small text-uppercase tracking-widest-custom text-gray-500 mt-3 fw-semibold">
+                                    Cedar · Sandal · Oud</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fresh -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card-3d">
+                        <div class="card-3d-wrapper" style="background-color: #e3eef0;">
+                            <img src="https://images.unsplash.com/photo-1592914610354-fd354ea45e48?auto=format&fit=crop&q=80&w=800"
+                                class="floating-img" alt="Fresh">
+                            <div class="card-text-3d">
+                                <h3 class="h2 fst-italic text-luxury-darkGreen">Fresh</h3>
+                                <p class="small text-uppercase tracking-widest-custom text-gray-500 mt-3 fw-semibold">
+                                    Bergamot · Lemon · Sea</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oriental -->
+                <div class="col-12 col-md-6 col-lg-3 mt-lg-5 pt-lg-5">
+                    <div class="card-3d">
+                        <div class="card-3d-wrapper" style="background-color: #f4ece0;">
+                            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=800"
+                                class="floating-img" alt="Oriental">
+                            <div class="card-text-3d">
+                                <h3 class="h2 fst-italic text-luxury-darkGreen">Oriental</h3>
+                                <p class="small text-uppercase tracking-widest-custom text-gray-500 mt-3 fw-semibold">
+                                    Amber · Vanilla · Spice</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curated Moods / Collections -->
+    <section id="collections" class="py-section bg-white">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-end mb-5 reveal">
+                <div>
+                    <span class="text-luxury-green text-uppercase tracking-widest-custom small fw-bold">The
+                        Campaign</span>
+                    <h2 class="display-4 text-luxury-darkGreen mt-3">Visual Stories</h2>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="story-card reveal">
+                        <img src="https://images.unsplash.com/photo-1725182524928-bc1de6a87d82?auto=format&fit=crop&q=80&w=1200"
+                            alt="Lumiere Du Jour">
+                        <div class="overlay"></div>
+                        <div class="content">
+                            <p class="story-subtitle small text-uppercase tracking-ultra mb-3">The Morning Light</p>
+                            <h3 class="story-title display-4 fst-italic mb-4">Lumière du Jour</h3>
+                            <span
+                                class="story-link border-bottom pb-2 small text-uppercase tracking-widest-custom">Discover
+                                Essence</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="story-card reveal delay-200">
+                        <img src="https://images.unsplash.com/photo-1590156424570-698d124ec7dd?auto=format&fit=crop&q=80&w=1200"
+                            alt="Ombre de la Nuit">
+                        <div class="overlay"></div>
+                        <div class="content">
+                            <p class="story-subtitle small text-uppercase tracking-ultra mb-3">The Night Shadow</p>
+                            <h3 class="story-title display-4 fst-italic mb-4">Ombre de la Nuit</h3>
+                            <span
+                                class="story-link border-bottom pb-2 small text-uppercase tracking-widest-custom">Discover
+                                Essence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Scent Feature -->
+    <section class="py-section bg-luxury-darkGreen text-white position-relative overflow-hidden">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 reveal">
+                    <div class="position-relative w-100 mx-auto overflow-hidden rounded-top-circle border-white-10 shadow-lg"
+                        style="max-width: 500px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 4/5; border-top-left-radius: 50%; border-top-right-radius: 50%;">
+                        <img src="https://images.unsplash.com/photo-1759794108525-94ff060da692?auto=format&fit=crop&q=80&w=1200"
+                            alt="Noir Absolu" class="w-100 h-100 object-fit-cover animate-float">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 reveal delay-200 ps-lg-5">
+                    <div class="d-inline-block px-4 py-2 rounded-pill mb-4"
+                        style="background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.3);">
+                        <span class="text-luxury-gold text-uppercase tracking-widest-custom small fw-bold">Chef-d'œuvre
+                            de l'année</span>
+                    </div>
+                    <h2 class="display-1 mb-4" style="line-height:1;">Noir <br> <span
+                            class="fst-italic text-luxury-gold ps-5">Absolu</span></h2>
+                    <p class="text-gray-300 fs-5 mb-5 fw-light" style="max-width: 600px;">
+                        A symphonic collision of dark truffle and radiant citrus. A fragrance that doesn't just fill a
+                        room—it transforms it.
+                    </p>
+                    <div class="row border-top border-bottom border-secondary py-4 mb-5">
+                        <div class="col-6">
+                            <p class="small text-uppercase tracking-widest-custom text-gray-500 mb-2 fw-bold">Top Note
+                            </p>
+                            <p class="fs-4 font-serif">Saffron & Ginger</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small text-uppercase tracking-widest-custom text-gray-500 mb-2 fw-bold">Base Note
+                            </p>
+                            <p class="fs-4 font-serif">Oakmoss & Leather</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-5">
+                        <span class="display-4 font-serif text-luxury-gold">$325</span>
+                        <a href="#" class="btn-primary-custom d-flex align-items-center gap-3">
+                            Acquire Now
+                            <i data-lucide="arrow-right" width="20"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boutique Section -->
+    <section id="shop" class="py-section bg-cream-light">
+        <div class="container">
+            <div class="text-center mb-section reveal">
+                <span class="text-luxury-green text-uppercase tracking-widest-custom small fw-bold">The Boutique</span>
+                <h2 class="display-4 text-luxury-darkGreen mt-3">Essential Curations</h2>
+            </div>
+
+            <div class="row g-5">
+                <!-- Product Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card reveal">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1765572354938-b88b9d7244cb?auto=format&fit=crop&q=80&w=800"
+                                alt="Product">
+                            <div class="quick-view">
+                                <button>Quick View</button>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="small text-uppercase tracking-widest-custom text-gray-400 mb-2 fw-bold">Parfum de
+                                Nuit</p>
+                            <h3 class="font-serif h2 text-luxury-darkGreen mb-3">Midnight Velvet</h3>
+                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                <span
+                                    class="fs-5 font-serif text-muted text-decoration-line-through opacity-50">$210</span>
+                                <span class="fs-4 font-serif text-luxury-gold">$185</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card reveal delay-100">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1592914610354-fd354ea45e48?auto=format&fit=crop&q=80&w=800"
+                                alt="Product">
+                            <div class="quick-view">
+                                <button>Quick View</button>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="small text-uppercase tracking-widest-custom text-gray-400 mb-2 fw-bold">L'Eau de
+                                Mer</p>
+                            <h3 class="font-serif h2 text-luxury-darkGreen mb-3">Azure Crystal</h3>
+                            <span class="fs-4 font-serif text-luxury-gold">$165</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card reveal delay-200">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1658553448131-839bb10efa93?auto=format&fit=crop&q=80&w=800"
+                                alt="Product">
+                            <div class="quick-view">
+                                <button>Quick View</button>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="small text-uppercase tracking-widest-custom text-gray-400 mb-2 fw-bold">Épices
+                                d'Orient</p>
+                            <h3 class="font-serif h2 text-luxury-darkGreen mb-3">Golden Amber</h3>
+                            <span class="fs-4 font-serif text-luxury-gold">$240</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 text-center pt-5">
+                <a href="#" class="btn-secondary-custom">View Full Collections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="py-section bg-white text-center">
+        <div class="container reveal">
+            <div class="d-flex justify-content-center gap-1 mb-4 text-luxury-gold">
+                <i data-lucide="star" width="20" height="20" class="fill-current"></i>
+                <i data-lucide="star" width="20" height="20" class="fill-current"></i>
+                <i data-lucide="star" width="20" height="20" class="fill-current"></i>
+                <i data-lucide="star" width="20" height="20" class="fill-current"></i>
+                <i data-lucide="star" width="20" height="20" class="fill-current"></i>
+            </div>
+            <h2 class="display-5 fst-italic text-luxury-darkGreen mb-5 mx-auto"
+                style="max-width: 900px; line-height: 1.4;">
+                "The olfactory depth of these creations is unparalleled. Each scent is a narrative, whispered in notes
+                of rare ingredients."
+            </h2>
+            <div class="d-flex flex-column align-items-center">
+                <span class="fw-bold text-uppercase tracking-ultra text-luxury-gold small">Vogue International</span>
+                <span class="small text-uppercase tracking-widest-custom text-gray-400 mt-2">Editorial Review</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boutiques -->
+    <section class="py-section bg-luxury-darkGreen text-white position-relative">
+        <div class="container reveal">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="./public/images/store.png" alt="Our Boutique" class="w-100 rounded-3 shadow-lg"
+                            style="object-fit: cover; min-height: 500px;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 border border-white-10 rounded-3"
+                            style="transform: translate(20px, 20px); z-index: -1;"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <span class="text-luxury-gold text-uppercase tracking-ultra small fw-bold mb-3 d-block">Our
+                        Sanctuaries</span>
+                    <h2 class="display-3 mb-5 font-serif">Global Presence</h2>
+
+                    <div class="store-list mt-5">
+                        <div
+                            class="d-flex justify-content-between align-items-center border-bottom border-secondary py-4 group cursor-pointer hover-row">
+                            <span class="fs-4 font-serif">Paris</span>
+                            <span class="text-gray-400 small text-uppercase tracking-widest-custom location-text">18
+                                Place Vendôme</span>
+                        </div>
+                        <div
+                            class="d-flex justify-content-between align-items-center border-bottom border-secondary py-4 group cursor-pointer hover-row">
+                            <span class="fs-4 font-serif">New York</span>
+                            <span class="text-gray-400 small text-uppercase tracking-widest-custom location-text">5th
+                                Avenue</span>
+                        </div>
+                        <div
+                            class="d-flex justify-content-between align-items-center border-bottom border-secondary py-4 group cursor-pointer hover-row">
+                            <span class="fs-4 font-serif">Dubai</span>
+                            <span class="text-gray-400 small text-uppercase tracking-widest-custom location-text">Dubai
+                                Mall</span>
+                        </div>
+                        <div
+                            class="d-flex justify-content-between align-items-center border-bottom border-secondary py-4 group cursor-pointer hover-row">
+                            <span class="fs-4 font-serif">Tokyo</span>
+                            <span
+                                class="text-gray-400 small text-uppercase tracking-widest-custom location-text">Ginza</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <a href="#" class="btn-primary-custom">Find a Boutique</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="py-section bg-white text-center pb-0">
+        <div class="container mb-section reveal">
+            <span class="text-luxury-green text-uppercase tracking-ultra small fw-bold">Social Journal</span>
+            <h2 class="display-4 text-luxury-darkGreen mt-3 mb-2 font-serif">@AurumVerde</h2>
+            <a href="#"
+                class="text-gray-500 hover:text-luxury-gold text-decoration-underline small tracking-widest-custom">Follow
+                Us</a>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="row g-0">
+                <div class="col-6 col-md-3">
+                    <div class="insta-item">
+                        <img src="./public/images/insta1.png" alt="Instagram">
+                        <div class="overlay">
+                            <i data-lucide="instagram" color="white" width="32"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="insta-item">
+                        <img src="./public/images/insta2.png" alt="Instagram">
+                        <div class="overlay">
+                            <i data-lucide="instagram" color="white" width="32"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="insta-item">
+                        <img src="./public/images/insta3.png" alt="Instagram">
+                        <div class="overlay">
+                            <i data-lucide="instagram" color="white" width="32"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="insta-item">
+                        <img src="./public/images/insta4.png" alt="Instagram">
+                        <div class="overlay">
+                            <i data-lucide="instagram" color="white" width="32"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-white py-section border-top border-secondary">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3">
+                    <a href="#"
+                        class="h3 fst-italic tracking-widest-custom text-luxury-gold d-block mb-4 text-decoration-none">AURUM
+                        & VERDE</a>
+                    <p class="text-gray-500 small fw-light mb-4" style="line-height: 2;">
+                        Redefining the standards of niche perfumery. Each bottle is a testament to the art of scent,
+                        crafted with heart and history.
+                    </p>
+                    <div class="d-flex gap-4">
+                        <a href="#" class="text-gray-500 hover:text-luxury-gold"><i data-lucide="instagram"
+                                width="18"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-luxury-gold"><i data-lucide="facebook"
+                                width="18"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-luxury-gold"><i data-lucide="twitter"
+                                width="18"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="small text-uppercase tracking-widest-custom mb-4 text-luxury-gold fw-bold">The House</h4>
+                    <ul class="list-unstyled text-gray-400 small fw-light d-flex flex-column gap-3">
+                        <li><a href="#">Our Heritage</a></li>
+                        <li><a href="#">The Alchemist</a></li>
+                        <li><a href="#">Sourcing</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="small text-uppercase tracking-widest-custom mb-4 text-luxury-gold fw-bold">Services</h4>
+                    <ul class="list-unstyled text-gray-400 small fw-light d-flex flex-column gap-3">
+                        <li><a href="#">Private Viewing</a></li>
+                        <li><a href="#">Bespoke Gifting</a></li>
+                        <li><a href="#">Shipping Palais</a></li>
+                        <li><a href="#">Customer Care</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="small text-uppercase tracking-widest-custom mb-4 text-luxury-gold fw-bold">Palais des
+                        Parfums</h4>
+                    <p class="text-gray-400 small fw-light" style="line-height: 2;">
+                        18 Place Vendôme, <br>
+                        75001 Paris, France <br>
+                        +33 1 00 00 00 00
+                    </p>
+                    <p class="mt-4 text-gray-500 small fst-italic">Open daily from 10:00 to 19:00</p>
+                </div>
+            </div>
+
+            <div
+                class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center small text-gray-500 tracking-widest-custom fw-medium">
+                <p>&copy; 2026 AURUM & VERDE. ALL RIGHTS RESERVED.</p>
+                <div class="d-flex gap-4 mt-3 mt-md-0">
+                    <a href="#">CONFIDENTIALITY</a>
+                    <a href="#">TERMS OF SALE</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Lucide Icons -->
+    <script src="./assets/vendor/lucide/lucide.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Main Script -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
