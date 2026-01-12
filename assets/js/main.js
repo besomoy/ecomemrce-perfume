@@ -1,4 +1,4 @@
-// Initialize Lucide Icons
+
 lucide.createIcons();
 
 // DOM Elements
@@ -15,7 +15,7 @@ const handleScroll = () => {
 
 window.addEventListener('scroll', handleScroll);
 
-// Initialize Swiper (Hero Slider)
+// Hero Slider
 const swiper = new Swiper('.hero-slider', {
     // Optional parameters
     direction: 'horizontal',
@@ -44,7 +44,7 @@ const swiper = new Swiper('.hero-slider', {
     },
 });
 
-// Reveal Animation on Scroll
+// Scroll Reveal
 const revealElements = document.querySelectorAll('.reveal');
 
 const revealOnScroll = new IntersectionObserver((entries) => {
@@ -60,7 +60,7 @@ const revealOnScroll = new IntersectionObserver((entries) => {
 
 revealElements.forEach((el) => revealOnScroll.observe(el));
 
-// Interactive 3D Tilt (Dynamic Mouse Tracking for extra wow factor)
+// 3D Tilt Effect
 const cards = document.querySelectorAll('.card-3d');
 
 cards.forEach(card => {
@@ -86,13 +86,13 @@ cards.forEach(card => {
     });
 });
 
-// Cart Badge Interaction
+// Cart Interaction
 const cartBtn = document.querySelector('.nav-icons button i[data-lucide="shopping-bag"]');
 // Need to traverse up to button, then find span
 if (cartBtn) {
     const btnContainer = cartBtn.closest('button');
     const badge = btnContainer ? btnContainer.querySelector('.cart-badge') : null;
-    const addBtns = document.querySelectorAll('button, .btn-primary-custom');
+    const addBtns = document.querySelectorAll('button, .btn--primary');
 
     if (badge) {
         addBtns.forEach(btn => {

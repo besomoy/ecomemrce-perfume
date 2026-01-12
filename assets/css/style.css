@@ -1,13 +1,15 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
 /* Variables */
 /* Reset/Base */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #1a1a1a;
   background-color: #faf9f6;
   overflow-x: hidden;
 }
+
 body.scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -27,19 +29,77 @@ a {
   color: inherit;
 }
 
-/* Colors Utilities */
+/* Standard Color Utilities */
+.text-primary {
+  color: #C7A243 !important;
+}
+
+.text-secondary {
+  color: #083c2f !important;
+}
+
+.text-secondary-dark {
+  color: #052b21 !important;
+}
+
+.text-muted {
+  color: #8f8f8f !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-ink {
+  color: #1a1a1a !important;
+}
+
+.bg-primary {
+  background-color: #C7A243 !important;
+}
+
+.bg-secondary {
+  background-color: #083c2f !important;
+}
+
+.bg-secondary-dark {
+  background-color: #052b21 !important;
+}
+
+.bg-deep {
+  background-color: #04100d !important;
+}
+
+.bg-surface {
+  background-color: #f4f1ea !important;
+}
+
+/* Legacy Theme Aliases */
 .text-luxury-gold {
-  color: #d4af37 !important;
+  color: #C7A243 !important;
 }
 
 .text-luxury-green {
   color: #083c2f !important;
 }
 
-.text-luxury-darkGreen {
+.text-luxury-dark-green {
   color: #052b21 !important;
 }
 
+.bg-luxury-gold {
+  background-color: #C7A243 !important;
+}
+
+.bg-luxury-dark-green {
+  background-color: #052b21 !important;
+}
+
+.bg-cream-light {
+  background-color: #faf9f6 !important;
+}
+
+/* Neutral Grays */
 .text-gray-200 {
   color: #e5e7eb !important;
 }
@@ -49,23 +109,11 @@ a {
 }
 
 .text-gray-400 {
-  color: #9ca3af !important;
+  color: #8f8f8f !important;
 }
 
 .text-gray-500 {
   color: #6b7280 !important;
-}
-
-.bg-luxury-gold {
-  background-color: #d4af37 !important;
-}
-
-.bg-luxury-darkGreen {
-  background-color: #052b21 !important;
-}
-
-.bg-cream-light {
-  background-color: #faf9f6 !important;
 }
 
 /* Spacing */
@@ -101,6 +149,7 @@ a {
   transition: all 0.5s;
   color: white;
 }
+
 .navbar-custom.scrolled {
   background-color: #042019;
   padding: 1rem 0;
@@ -108,6 +157,7 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   /* Stroke bottom */
 }
+
 .navbar-custom .logo {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
@@ -115,20 +165,24 @@ a {
   letter-spacing: 0.1em;
   color: #d4af37;
 }
+
 @media (min-width: 768px) {
   .navbar-custom .logo {
     font-size: 1.875rem;
   }
 }
+
 .navbar-custom .nav-links {
   display: none;
 }
+
 @media (min-width: 768px) {
   .navbar-custom .nav-links {
     display: flex;
     gap: 3rem;
   }
 }
+
 .navbar-custom .nav-links a {
   font-size: 10px;
   text-transform: uppercase;
@@ -136,14 +190,17 @@ a {
   font-weight: 600;
   transition: color 0.3s;
 }
+
 .navbar-custom .nav-links a:hover {
   color: #d4af37;
 }
+
 .navbar-custom .nav-icons {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
+
 .navbar-custom .nav-icons button {
   background: none;
   border: none;
@@ -151,9 +208,11 @@ a {
   padding: 0;
   transition: color 0.3s;
 }
+
 .navbar-custom .nav-icons button:hover {
   color: #d4af37;
 }
+
 .navbar-custom .cart-badge {
   position: absolute;
   top: -4px;
@@ -186,6 +245,7 @@ a {
   overflow: hidden;
   color: white;
 }
+
 .hero-header .bg-overlay {
   position: absolute;
   inset: 0;
@@ -193,6 +253,7 @@ a {
   z-index: 10;
   pointer-events: none;
 }
+
 .hero-header .hero-bg-img {
   position: absolute;
   inset: 0;
@@ -201,6 +262,7 @@ a {
   object-fit: cover;
   z-index: 0;
 }
+
 .hero-header .hero-content {
   position: relative;
   z-index: 20;
@@ -216,6 +278,7 @@ a {
   width: 10px;
   height: 10px;
 }
+
 .swiper-pagination-bullet-active {
   background: #d4af37 !important;
   border-color: #d4af37;
@@ -227,10 +290,12 @@ a {
   color: white !important;
   transition: color 0.3s;
 }
+
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   color: #d4af37 !important;
 }
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 2rem !important;
@@ -245,23 +310,29 @@ a {
   animation: bounce 1s infinite;
   z-index: 20;
 }
+
 .bounce-arrow a {
   color: rgba(255, 255, 255, 0.5);
 }
+
 .bounce-arrow a:hover {
   color: white;
 }
 
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(-50%, -25%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
+
   50% {
     transform: translate(-50%, 0);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
+
 /* Animations */
 .animate-slideUp {
   animation: slideUp 1s ease-out forwards;
@@ -280,27 +351,35 @@ a {
     transform: translateY(20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
 }
+
 .delay-200 {
   animation-delay: 0.2s;
 }
@@ -331,6 +410,7 @@ a {
   border: none;
   transition: all 0.3s;
 }
+
 .btn-primary-custom:hover {
   background-color: white;
   color: #052b21;
@@ -348,6 +428,7 @@ a {
   background: transparent;
   transition: all 0.3s;
 }
+
 .btn-secondary-custom:hover {
   background-color: #052b21;
   color: white;
@@ -364,6 +445,7 @@ a {
   height: 450px;
   cursor: pointer;
 }
+
 .card-3d .card-3d-wrapper {
   position: absolute;
   inset: 0;
@@ -377,6 +459,7 @@ a {
   overflow: visible;
   transition: transform 0.6s, box-shadow 0.6s;
 }
+
 .card-3d .card-3d-wrapper .floating-img {
   position: absolute;
   top: -4rem;
@@ -388,17 +471,20 @@ a {
   border: 2px solid rgba(255, 255, 255, 0.3);
   transition: transform 0.6s;
 }
+
 .card-3d .card-3d-wrapper .card-text-3d {
   z-index: 10;
   padding: 0 1rem;
   text-align: center;
   width: 100%;
 }
+
 .card-3d .card-3d-wrapper .card-text-3d p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .card-3d:hover .card-3d-wrapper {
   transform: translateY(-10px);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -411,24 +497,29 @@ a {
   overflow: hidden;
   cursor: pointer;
 }
+
 .story-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 2s;
 }
+
 .story-card:hover img {
   transform: scale(1.1);
 }
+
 .story-card .overlay {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.3);
   transition: background-color 0.7s;
 }
+
 .story-card:hover .overlay {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .story-card .content {
   position: absolute;
   inset: 0;
@@ -440,27 +531,33 @@ a {
   text-align: center;
   padding: 3rem;
 }
+
 .story-card .story-subtitle {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.7s;
 }
+
 .story-card .story-title {
   transform: translateY(2rem);
   transition: transform 0.7s;
 }
+
 .story-card .story-link {
   opacity: 0;
   transition: opacity 0.7s;
   transition-delay: 0.2s;
 }
+
 .story-card:hover .story-subtitle {
   opacity: 1;
   transform: translateY(0);
 }
+
 .story-card:hover .story-title {
   transform: translateY(0);
 }
+
 .story-card:hover .story-link {
   opacity: 1;
 }
@@ -473,9 +570,11 @@ a {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   transition: all 0.7s;
 }
+
 .product-card:hover {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
+
 .product-card .img-wrapper {
   position: relative;
   height: 400px;
@@ -483,12 +582,14 @@ a {
   border-radius: 2rem;
   overflow: hidden;
 }
+
 .product-card .img-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.7s;
 }
+
 .product-card .img-wrapper .quick-view {
   position: absolute;
   inset: 0;
@@ -499,6 +600,7 @@ a {
   opacity: 0;
   transition: all 0.7s;
 }
+
 .product-card .img-wrapper .quick-view button {
   background: white;
   color: #052b21;
@@ -510,13 +612,16 @@ a {
   letter-spacing: 0.1em;
   border: none;
 }
+
 .product-card .img-wrapper .quick-view button:hover {
   background-color: #d4af37;
   color: white;
 }
+
 .product-card:hover .img-wrapper img {
   transform: scale(1.1);
 }
+
 .product-card:hover .img-wrapper .quick-view {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
@@ -534,9 +639,11 @@ a {
   outline: none;
   transition: all 0.5s;
 }
+
 .newsletter-input:focus {
   border-bottom-color: #d4af37;
 }
+
 .newsletter-input::placeholder {
   color: #4b5563;
 }
@@ -547,6 +654,7 @@ a {
   transform: translateY(30px);
   transition: all 1s ease-out;
 }
+
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
@@ -561,10 +669,12 @@ footer a:hover {
 .store-list .hover-row {
   transition: all 0.3s;
 }
+
 .store-list .hover-row:hover {
   padding-left: 1rem;
   border-bottom-color: #d4af37 !important;
 }
+
 .store-list .hover-row:hover .fs-4 {
   color: #d4af37;
 }
@@ -576,12 +686,14 @@ footer a:hover {
   height: 400px;
   cursor: pointer;
 }
+
 .insta-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.7s ease;
 }
+
 .insta-item .overlay {
   position: absolute;
   inset: 0;
@@ -592,9 +704,11 @@ footer a:hover {
   opacity: 0;
   transition: opacity 0.5s;
 }
+
 .insta-item:hover img {
   transform: scale(1.1);
 }
+
 .insta-item:hover .overlay {
   opacity: 1;
 }

@@ -1,0 +1,91 @@
+/* Navbar */
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+    padding: 1.5rem 0;
+    transition: all 0.5s;
+    color: white;
+
+    &.scrolled {
+        background-color: #042019;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .logo {
+        font-family: $font-serif;
+        font-size: 1.5rem;
+        font-style: italic;
+        letter-spacing: 0.1em;
+        color: $primary;
+
+        @media (min-width: 768px) {
+            font-size: 1.875rem;
+        }
+    }
+
+    .nav-links {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+            gap: 3rem;
+        }
+
+        a {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            font-weight: 600;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .nav-icons {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        button {
+            background: none;
+            border: none;
+            color: inherit;
+            padding: 0;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .cart-badge {
+        position: absolute;
+        top: -4px;
+        right: -8px;
+        background-color: $primary;
+        color: $secondary-dark;
+        font-size: 9px;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+}
+
+/* Footer */
+footer {
+    a:hover {
+        color: white !important;
+    }
+}
