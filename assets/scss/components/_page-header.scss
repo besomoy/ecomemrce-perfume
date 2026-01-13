@@ -1,0 +1,56 @@
+// Page Header + Breadcrumb
+.page-header {
+    background-color: $secondary-dark;
+    background-image: url('../images/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 180px 0 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(5, 43, 33, 0.7);
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+        font-family: $font-serif;
+        font-size: 3.5rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    .breadcrumb {
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-size: 0.8rem;
+
+        a {
+            color: rgba(255, 255, 255, 0.6);
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        .active {
+            color: white;
+            font-weight: 600;
+        }
+
+        .separator {
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+    }
+}

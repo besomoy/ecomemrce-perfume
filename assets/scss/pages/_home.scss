@@ -38,21 +38,6 @@
     }
 }
 
-.store-list {
-    .hover-row {
-        transition: all 0.3s;
-
-        &:hover {
-            padding-left: 1rem;
-            border-bottom-color: $primary !important;
-
-            .fs-4 {
-                color: $primary;
-            }
-        }
-    }
-}
-
 .insta-item {
     position: relative;
     overflow: hidden;

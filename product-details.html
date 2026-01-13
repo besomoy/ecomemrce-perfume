@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Scent & Aura</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS (Compiled from SCSS) -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/vendor/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-custom" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
+            </a>
+
+            <div class="nav-links">
+                <div class="nav-item-has-dropdown">
+                    <a href="index.html">Home <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="index.html">Luxury Default</a>
+                        <a href="index-2.html">Modern Atelier</a>
+                        <a href="#">Minimal House</a>
+                    </div>
+                </div>
+                <div class="nav-item-has-dropdown">
+                    <a href="#shop">Shop <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="#">New Arrivals</a>
+                        <a href="#">Best Sellers</a>
+                        <a href="#">Collections</a>
+                        <a href="#">Fragrance Finder</a>
+                    </div>
+                </div>
+                <a href="about-us.html">About Us</a>
+                <a href="#contact">Contact</a>
+                <div class="nav-item-has-dropdown">
+                    <a href="#blog">Blog <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="#">Journal Standard</a>
+                        <a href="#">Masonry Grid</a>
+                        <a href="#">Scent Stories</a>
+                    </div>
+                </div>
+                <div class="nav-item-has-dropdown">
+                    <a href="#">All Pages <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="#">FAQ</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Sale</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-icons">
+                <button title="Search"><i data-lucide="search" width="20"></i></button>
+                <button title="Account"><i data-lucide="user" width="20"></i></button>
+                <button class="position-relative" title="Wishlist">
+                    <i data-lucide="heart" width="20"></i>
+                    <span class="cart-badge">0</span>
+                </button>
+                <button class="position-relative" title="Cart">
+                    <i data-lucide="shopping-bag" width="20"></i>
+                    <span class="cart-badge">0</span>
+                </button>
+                <button class="d-lg-none" title="Menu"><i data-lucide="menu" width="22"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container reveal active">
+            <h1>Product Details</h1>
+            <div class="breadcrumb d-flex align-items-center">
+                <a href="index.html">Home</a>
+                <span class="separator">/</span>
+                <a href="shop.html">Shop</a>
+                <span class="separator">/</span>
+                <span class="active">Noir Absolu</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-section bg-white">
+            <div class="container">
+                <div class="row g-5 align-items-start">
+                    <div class="col-lg-6">
+                        <div class="lux-card p-4">
+                            <img src="./assets/images/product-1.jpg" class="w-100 rounded-4" alt="Noir Absolu">
+                            <div class="d-flex gap-3 mt-4 flex-wrap">
+                                <img src="./assets/images/product-1.jpg" class="product-thumb" alt="Noir Absolu">
+                                <img src="./assets/images/product-2.png" class="product-thumb" alt="Bottle Detail">
+                                <img src="./assets/images/product-3.png" class="product-thumb" alt="Bottle Profile">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="lux-badge mb-3">Signature</span>
+                        <h2 class="display-5 mb-3">Noir Absolu</h2>
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex gap-1">
+                                <i data-lucide="star" width="16" fill="#ff9d00"></i>
+                                <i data-lucide="star" width="16" fill="#ff9d00"></i>
+                                <i data-lucide="star" width="16" fill="#ff9d00"></i>
+                                <i data-lucide="star" width="16" fill="#ff9d00"></i>
+                                <i data-lucide="star-half" width="16" fill="#ff9d00"></i>
+                            </div>
+                            <span class="text-gray-400 small">(128 reviews)</span>
+                        </div>
+                        <p class="text-gray-500 mb-4">
+                            A deep, velvety composition of smoked oud, black tea, and amber resin. Noir Absolu is a
+                            signature scent crafted for evenings that linger.
+                        </p>
+                        <div class="d-flex align-items-center gap-4 mb-4">
+                            <span class="display-6 font-serif text-secondary">$325</span>
+                            <span class="text-gray-400 small">EDP 50ml</span>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="small text-uppercase tracking-widest-custom text-gray-400 mb-2">Size</p>
+                            <div class="size-options justify-content-start">
+                                <button class="size-btn">30ml</button>
+                                <button class="size-btn active">50ml</button>
+                                <button class="size-btn">100ml</button>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-3 mb-4 lux-form">
+                            <label class="form-label mb-0">Qty</label>
+                            <input type="number" class="form-control w-auto" value="1" min="1">
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <button class="btn btn--primary">Add to Cart</button>
+                            <button class="btn btn--secondary">Add to Wishlist</button>
+                        </div>
+
+                        <div class="lux-divider my-4"></div>
+                        <ul class="list-unstyled d-flex flex-column gap-2 text-gray-500">
+                            <li><strong class="text-secondary">Top Notes:</strong> Saffron, bergamot, black tea</li>
+                            <li><strong class="text-secondary">Heart Notes:</strong> Smoked oud, iris, clove</li>
+                            <li><strong class="text-secondary">Base Notes:</strong> Amber resin, leather, sandalwood</li>
+                            <li><strong class="text-secondary">Availability:</strong> In stock and ready to ship</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-section bg-surface">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+                    <div class="mb-3 mb-md-0">
+                        <span class="section-subtitle">Reviews</span>
+                        <h2 class="section-title">Customer Impressions</h2>
+                    </div>
+                    <a href="#" class="btn btn--secondary">Write a Review</a>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card h-100">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex gap-1">
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                </div>
+                                <span class="text-gray-400 small">Apr 18, 2026</span>
+                            </div>
+                            <h3 class="h6 text-secondary mb-2">Warm and refined</h3>
+                            <p class="text-gray-500 mb-0">
+                                The amber and leather notes are perfectly balanced. It feels like a tailored suit.
+                            </p>
+                            <div class="mt-3 small text-uppercase tracking-widest-custom text-gray-400">Avery L.</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card h-100">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex gap-1">
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star-half" width="14" fill="#ff9d00"></i>
+                                </div>
+                                <span class="text-gray-400 small">Apr 09, 2026</span>
+                            </div>
+                            <h3 class="h6 text-secondary mb-2">Perfect evening scent</h3>
+                            <p class="text-gray-500 mb-0">
+                                It has depth without being heavy. I love the lingering trail it leaves.
+                            </p>
+                            <div class="mt-3 small text-uppercase tracking-widest-custom text-gray-400">Nora T.</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card h-100">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex gap-1">
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star-half" width="14" fill="#ff9d00"></i>
+                                </div>
+                                <span class="text-gray-400 small">Mar 29, 2026</span>
+                            </div>
+                            <h3 class="h6 text-secondary mb-2">Bold and memorable</h3>
+                            <p class="text-gray-500 mb-0">
+                                The smoked oud stands out in the best way. A confident, modern classic.
+                            </p>
+                            <div class="mt-3 small text-uppercase tracking-widest-custom text-gray-400">Jonas K.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-section bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-subtitle">You May Also Love</span>
+                    <h2 class="section-title">Related Products</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="sc-product-card">
+                            <div class="card-badges">
+                                <button class="wishlist-btn" title="Add to Wishlist">
+                                    <i data-lucide="heart" width="18"></i>
+                                </button>
+                            </div>
+                            <div class="img-wrapper">
+                                <img src="./assets/images/product-2.png" alt="Azure Crystal">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-title">Azure Crystal</h3>
+                                <div class="rating-wrapper">
+                                    <div class="stars">
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    </div>
+                                    <span class="review-count">(76)</span>
+                                </div>
+                                <div class="size-options">
+                                    <button class="size-btn" data-price="185">30ml</button>
+                                    <button class="size-btn" data-price="295">50ml</button>
+                                </div>
+                                <div class="price-wrapper">
+                                    <span class="price">295?</span>
+                                    <span class="label">/starting</span>
+                                </div>
+                                <button class="add-btn disabled">
+                                    Select A Size First
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="sc-product-card">
+                            <div class="card-badges">
+                                <button class="wishlist-btn" title="Add to Wishlist">
+                                    <i data-lucide="heart" width="18"></i>
+                                </button>
+                            </div>
+                            <div class="img-wrapper">
+                                <img src="./assets/images/product-3.png" alt="Rose Ember">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-title">Rose Ember</h3>
+                                <div class="rating-wrapper">
+                                    <div class="stars">
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star-half" width="14" fill="#ff9d00"></i>
+                                    </div>
+                                    <span class="review-count">(54)</span>
+                                </div>
+                                <div class="size-options">
+                                    <button class="size-btn" data-price="210">30ml</button>
+                                    <button class="size-btn" data-price="340">50ml</button>
+                                </div>
+                                <div class="price-wrapper">
+                                    <span class="price">340?</span>
+                                    <span class="label">/starting</span>
+                                </div>
+                                <button class="add-btn disabled">
+                                    Select A Size First
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="sc-product-card">
+                            <div class="card-badges">
+                                <button class="wishlist-btn" title="Add to Wishlist">
+                                    <i data-lucide="heart" width="18"></i>
+                                </button>
+                            </div>
+                            <div class="img-wrapper">
+                                <img src="./assets/images/product-1.jpg" alt="Cedar Mist">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-title">Cedar Mist</h3>
+                                <div class="rating-wrapper">
+                                    <div class="stars">
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star-half" width="14" fill="#ff9d00"></i>
+                                    </div>
+                                    <span class="review-count">(61)</span>
+                                </div>
+                                <div class="size-options">
+                                    <button class="size-btn" data-price="190">30ml</button>
+                                    <button class="size-btn" data-price="310">50ml</button>
+                                </div>
+                                <div class="price-wrapper">
+                                    <span class="price">310?</span>
+                                    <span class="label">/starting</span>
+                                </div>
+                                <button class="add-btn disabled">
+                                    Select A Size First
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="sc-product-card">
+                            <div class="card-badges">
+                                <button class="wishlist-btn" title="Add to Wishlist">
+                                    <i data-lucide="heart" width="18"></i>
+                                </button>
+                            </div>
+                            <div class="img-wrapper">
+                                <img src="./assets/images/product-2.png" alt="Golden Amber">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-title">Golden Amber</h3>
+                                <div class="rating-wrapper">
+                                    <div class="stars">
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                        <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    </div>
+                                    <span class="review-count">(90)</span>
+                                </div>
+                                <div class="size-options">
+                                    <button class="size-btn" data-price="205">30ml</button>
+                                    <button class="size-btn" data-price="330">50ml</button>
+                                </div>
+                                <div class="price-wrapper">
+                                    <span class="price">330?</span>
+                                    <span class="label">/starting</span>
+                                </div>
+                                <button class="add-btn disabled">
+                                    Select A Size First
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-white border-secondary" style="padding-top: 80px;">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="mb-4 d-block">
+                        <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
+                    </a>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0 text-gray-400 small fw-light">
+                            Address: 1234 Fashion Street, Suite 567,<br> New York, NY 10001
+                        </p>
+                        <p class="mb-0 text-gray-400 small fw-light">
+                            Email: <a href="mailto:info@fashionshop.com"
+                                class="text-gray-400 hover:text-primary">info@fashionshop.com</a>
+                        </p>
+                        <p class="mb-0 text-gray-400 small fw-light">
+                            Phone: <span class="text-primary">(212) 555-1234</span>
+                        </p>
+                        <a href="#"
+                            class="text-primary small text-decoration-underline mt-1 d-inline-flex align-items-center gap-1 hover:text-white transition-colors">
+                            Get direction <i data-lucide="arrow-up-right" width="14"></i>
+                        </a>
+
+                        <div class="d-flex gap-2 mt-3">
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="facebook" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="twitter" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="instagram" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="music-2" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="pin" width="16"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Help -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">Help</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Returns + Exchanges</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Shipping</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">FAQ's</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Compare</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">My Wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- About Us -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">About us</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="#" class="hover:text-primary transition-colors">Our Story</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Visit Our Store</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Account</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">Sign Up for Email</h5>
+                    <p class="text-gray-400 small mb-4 fw-light">
+                        Sign up to get first dibs on new arrivals, sales, exclusive content, events and more!
+                    </p>
+                    <form class="mb-4 footer-newsletter-form">
+                        <input type="email" class="form-control" placeholder="Enter your email..."
+                            aria-label="Enter your email">
+                        <button class="btn-subscribe" type="submit">
+                            Subscribe <i data-lucide="arrow-up-right" width="14" class="ms-2"></i>
+                        </button>
+                    </form>
+
+                    <div class="d-flex gap-4">
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 border-0 small d-flex align-items-center gap-1"
+                                type="button" data-bs-toggle="dropdown">
+                                USD
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">GBP</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 border-0 small d-flex align-items-center gap-1"
+                                type="button" data-bs-toggle="dropdown">
+                                English
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Francais</a></li>
+                                <li><a class="dropdown-item" href="#">Espanol</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0">&copy; 2026 Scent & Aura. All Rights Reserved</p>
+                <div class="d-flex gap-2">
+                    <img src="./assets/images/payment.png" alt="Payment Methods" width="300">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Lucide Icons -->
+    <script src="./assets/vendor/lucide/lucide.js"></script>
+    <!-- Swiper JS -->
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Main Script -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

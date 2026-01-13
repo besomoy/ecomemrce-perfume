@@ -183,3 +183,14 @@ footer {
         color: white !important;
     }
 }
+
+footer.bg-footer {
+    background-image: none !important;
+    position: relative;
+    border-top: none !important;
+
+    &::before,
+    &::after {
+        display: none !important;
+    }
+}

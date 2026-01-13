@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Scent & Aura</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS (Compiled from SCSS) -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/vendor/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-custom" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
+            </a>
+
+            <div class="nav-links">
+                <div class="nav-item-has-dropdown">
+                    <a href="index.html">Home <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="index.html">Luxury Default</a>
+                        <a href="index-2.html">Modern Atelier</a>
+                        <a href="#">Minimal House</a>
+                    </div>
+                </div>
+                <div class="nav-item-has-dropdown">
+                    <a href="#shop">Shop <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="#">New Arrivals</a>
+                        <a href="#">Best Sellers</a>
+                        <a href="#">Collections</a>
+                        <a href="#">Fragrance Finder</a>
+                    </div>
+                </div>
+                <a href="about-us.html">About Us</a>
+                <a href="#contact">Contact</a>
+                <div class="nav-item-has-dropdown">
+                    <a href="#blog">Blog <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="#">Journal Standard</a>
+                        <a href="#">Masonry Grid</a>
+                        <a href="#">Scent Stories</a>
+                    </div>
+                </div>
+                <div class="nav-item-has-dropdown">
+                    <a href="#">All Pages <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="#">FAQ</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Sale</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-icons">
+                <button title="Search"><i data-lucide="search" width="20"></i></button>
+                <button title="Account"><i data-lucide="user" width="20"></i></button>
+                <button class="position-relative" title="Wishlist">
+                    <i data-lucide="heart" width="20"></i>
+                    <span class="cart-badge">0</span>
+                </button>
+                <button class="position-relative" title="Cart">
+                    <i data-lucide="shopping-bag" width="20"></i>
+                    <span class="cart-badge">0</span>
+                </button>
+                <button class="d-lg-none" title="Menu"><i data-lucide="menu" width="22"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container reveal active">
+            <h1>Checkout</h1>
+            <div class="breadcrumb d-flex align-items-center">
+                <a href="index.html">Home</a>
+                <span class="separator">/</span>
+                <span class="active">Checkout</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-section bg-white">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-8">
+                        <div class="lux-card p-4 p-lg-5 lux-form">
+                            <div class="lux-card-header">
+                                <span class="section-subtitle">Checkout</span>
+                                <h2 class="section-title mb-0">Billing Details</h2>
+                            </div>
+
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">First Name</label>
+                                        <input type="text" class="form-control" placeholder="Avery">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" placeholder="Hughes">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-control" placeholder="avery@email.com">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Phone</label>
+                                        <input type="tel" class="form-control" placeholder="(212) 555-1234">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Address</label>
+                                        <input type="text" class="form-control" placeholder="1234 Fashion Street">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">City</label>
+                                        <input type="text" class="form-control" placeholder="New York">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">State</label>
+                                        <input type="text" class="form-control" placeholder="NY">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">ZIP</label>
+                                        <input type="text" class="form-control" placeholder="10001">
+                                    </div>
+                                </div>
+
+                                <div class="lux-divider my-4"></div>
+
+                                <h3 class="h5 text-secondary mb-3">Shipping Details</h3>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Shipping Method</label>
+                                        <select class="form-select">
+                                            <option selected>Standard (3-5 days)</option>
+                                            <option>Express (1-2 days)</option>
+                                            <option>Same Day (NYC)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Delivery Notes</label>
+                                        <input type="text" class="form-control" placeholder="Leave at concierge">
+                                    </div>
+                                </div>
+
+                                <div class="lux-divider my-4"></div>
+
+                                <h3 class="h5 text-secondary mb-3">Payment</h3>
+                                <div class="d-flex flex-column gap-2 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment" id="pay-card"
+                                            checked>
+                                        <label class="form-check-label" for="pay-card">Credit or Debit Card</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment" id="pay-paypal">
+                                        <label class="form-check-label" for="pay-paypal">PayPal</label>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label class="form-label">Card Number</label>
+                                        <input type="text" class="form-control" placeholder="1234 5678 9012 3456">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Name on Card</label>
+                                        <input type="text" class="form-control" placeholder="Avery Hughes">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">Expiry</label>
+                                        <input type="text" class="form-control" placeholder="MM/YY">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">CVV</label>
+                                        <input type="text" class="form-control" placeholder="123">
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column flex-md-row gap-3 mt-4">
+                                    <button class="btn btn--primary" type="submit">Place Order</button>
+                                    <button class="btn btn--secondary" type="button">Continue to Payment</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="lux-card p-4">
+                            <div class="lux-card-header">
+                                <span class="section-subtitle">Order Summary</span>
+                                <h2 class="section-title mb-0">Your Order</h2>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="./assets/images/product-1.jpg" class="product-thumb" alt="Noir Absolu">
+                                <div>
+                                    <h4 class="h6 mb-1">Noir Absolu</h4>
+                                    <span class="text-gray-400 small">1 x 50ml</span>
+                                </div>
+                                <span class="ms-auto font-serif text-secondary">$325</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="./assets/images/product-2.png" class="product-thumb" alt="Azure Crystal">
+                                <div>
+                                    <h4 class="h6 mb-1">Azure Crystal</h4>
+                                    <span class="text-gray-400 small">1 x 50ml</span>
+                                </div>
+                                <span class="ms-auto font-serif text-secondary">$295</span>
+                            </div>
+
+                            <div class="lux-divider my-3"></div>
+                            <div class="d-flex justify-content-between mb-2 text-gray-500">
+                                <span>Subtotal</span>
+                                <span>$620</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 text-gray-500">
+                                <span>Shipping</span>
+                                <span>$18</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 text-gray-500">
+                                <span>Taxes</span>
+                                <span>$24</span>
+                            </div>
+                            <div class="lux-divider my-3"></div>
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-bold">Total</span>
+                                <span class="h5 font-serif text-secondary">$662</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-white border-secondary" style="padding-top: 80px;">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="mb-4 d-block">
+                        <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
+                    </a>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0 text-gray-400 small fw-light">
+                            Address: 1234 Fashion Street, Suite 567,<br> New York, NY 10001
+                        </p>
+                        <p class="mb-0 text-gray-400 small fw-light">
+                            Email: <a href="mailto:info@fashionshop.com"
+                                class="text-gray-400 hover:text-primary">info@fashionshop.com</a>
+                        </p>
+                        <p class="mb-0 text-gray-400 small fw-light">
+                            Phone: <span class="text-primary">(212) 555-1234</span>
+                        </p>
+                        <a href="#"
+                            class="text-primary small text-decoration-underline mt-1 d-inline-flex align-items-center gap-1 hover:text-white transition-colors">
+                            Get direction <i data-lucide="arrow-up-right" width="14"></i>
+                        </a>
+
+                        <div class="d-flex gap-2 mt-3">
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="facebook" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="twitter" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="instagram" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="music-2" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="pin" width="16"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Help -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">Help</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Returns + Exchanges</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Shipping</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">FAQ's</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Compare</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">My Wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- About Us -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">About us</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="#" class="hover:text-primary transition-colors">Our Story</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Visit Our Store</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Account</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">Sign Up for Email</h5>
+                    <p class="text-gray-400 small mb-4 fw-light">
+                        Sign up to get first dibs on new arrivals, sales, exclusive content, events and more!
+                    </p>
+                    <form class="mb-4 footer-newsletter-form">
+                        <input type="email" class="form-control" placeholder="Enter your email..."
+                            aria-label="Enter your email">
+                        <button class="btn-subscribe" type="submit">
+                            Subscribe <i data-lucide="arrow-up-right" width="14" class="ms-2"></i>
+                        </button>
+                    </form>
+
+                    <div class="d-flex gap-4">
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 border-0 small d-flex align-items-center gap-1"
+                                type="button" data-bs-toggle="dropdown">
+                                USD
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">GBP</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 border-0 small d-flex align-items-center gap-1"
+                                type="button" data-bs-toggle="dropdown">
+                                English
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Francais</a></li>
+                                <li><a class="dropdown-item" href="#">Espanol</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0">&copy; 2026 Scent & Aura. All Rights Reserved</p>
+                <div class="d-flex gap-2">
+                    <img src="./assets/images/payment.png" alt="Payment Methods" width="300">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Lucide Icons -->
+    <script src="./assets/vendor/lucide/lucide.js"></script>
+    <!-- Swiper JS -->
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Main Script -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

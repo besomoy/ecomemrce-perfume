@@ -20,6 +20,115 @@
     display: block;
 }
 
+// Inner Page Utilities
+.lux-card {
+    background-color: $neutral-100;
+    border: 1px solid rgba($primary, 0.18);
+    border-radius: 1.5rem;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.04);
+}
+
+.lux-card-header {
+    border-bottom: 1px solid rgba($secondary-dark, 0.08);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.lux-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid rgba($primary, 0.35);
+    background: rgba($primary, 0.08);
+    color: $secondary-dark;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+}
+
+.lux-divider {
+    height: 1px;
+    background: rgba($secondary-dark, 0.1);
+    width: 100%;
+}
+
+.lux-form {
+    .form-label {
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: $secondary-dark;
+    }
+
+    .form-control,
+    .form-select {
+        background-color: $neutral-100;
+        border: 1px solid rgba($secondary-dark, 0.18);
+        border-radius: 0.75rem;
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+        color: $neutral-700;
+    }
+
+    .form-control::placeholder {
+        color: $neutral-400;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+        border-color: $primary;
+        box-shadow: 0 0 0 0.2rem rgba($primary, 0.15);
+    }
+
+    .form-check-input {
+        border-color: rgba($secondary-dark, 0.25);
+    }
+
+    .form-check-input:checked {
+        background-color: $primary;
+        border-color: $primary;
+    }
+}
+
+.cart-item {
+    border-bottom: 1px solid rgba($secondary-dark, 0.1);
+    padding: 1.25rem 0;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.product-thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 1px solid rgba($secondary-dark, 0.1);
+}
+
+.review-card {
+    border: 1px solid rgba($secondary-dark, 0.08);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: $neutral-100;
+}
+
+.icon-pill {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba($primary, 0.12);
+    color: $primary;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .swiper-pagination-bullet {
     background: transparent !important;
     border: 1px solid white;
@@ -244,6 +353,21 @@
     }
 }
 
+.store-list {
+    .hover-row {
+        transition: all 0.3s;
+
+        &:hover {
+            padding-left: 1rem;
+            border-bottom-color: $primary !important;
+
+            .fs-4 {
+                color: $primary;
+            }
+        }
+    }
+}
+
 .bounce-arrow {
     position: absolute;
     bottom: 3rem;
@@ -272,6 +396,60 @@
     50% {
         transform: translate(-50%, 0);
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+// FAQ Section
+.faq-section {
+    background-color: $neutral-100;
+    padding: 120px 0;
+
+    .accordion-item {
+        border: none;
+        border-bottom: 1px solid $neutral-300;
+        background-color: transparent;
+        margin-bottom: 0.5rem;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .accordion-button {
+        background-color: transparent;
+        color: $secondary-dark;
+        font-family: $font-serif;
+        font-size: 1.1rem;
+        padding: 1.5rem 0;
+        box-shadow: none;
+
+        &:not(.collapsed) {
+            color: $primary;
+            background-color: transparent;
+            box-shadow: none;
+
+            &::after {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23C7A243'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            }
+        }
+
+        &::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23052b21'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            transform: scale(0.8);
+            transition: transform 0.3s;
+        }
+
+        &:focus {
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, 0);
+        }
+    }
+
+    .accordion-body {
+        padding: 0 0 1.5rem 0;
+        color: $neutral-700;
+        line-height: 1.7;
+        font-size: 0.95rem;
     }
 }
 

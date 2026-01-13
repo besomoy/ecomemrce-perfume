@@ -2037,4 +2037,110 @@ footer.bg-footer::before, footer.bg-footer::after {
   display: none !important;
 }
 
+/* Inner pages */
+.lux-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(199, 162, 67, 0.18);
+  border-radius: 1.5rem;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.04);
+}
+
+.lux-card-header {
+  border-bottom: 1px solid rgba(5, 43, 33, 0.08);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.lux-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(199, 162, 67, 0.35);
+  background: rgba(199, 162, 67, 0.08);
+  color: #052b21;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+
+.lux-divider {
+  height: 1px;
+  background: rgba(5, 43, 33, 0.1);
+  width: 100%;
+}
+
+.lux-form .form-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #052b21;
+}
+
+.lux-form .form-control,
+.lux-form .form-select {
+  background-color: #ffffff;
+  border: 1px solid rgba(5, 43, 33, 0.18);
+  border-radius: 0.75rem;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+}
+
+.lux-form .form-control::placeholder {
+  color: #8f8f8f;
+}
+
+.lux-form .form-control:focus,
+.lux-form .form-select:focus {
+  border-color: #C7A243;
+  box-shadow: 0 0 0 0.2rem rgba(199, 162, 67, 0.15);
+}
+
+.lux-form .form-check-input {
+  border-color: rgba(5, 43, 33, 0.25);
+}
+
+.lux-form .form-check-input:checked {
+  background-color: #C7A243;
+  border-color: #C7A243;
+}
+
+.cart-item {
+  border-bottom: 1px solid rgba(5, 43, 33, 0.1);
+  padding: 1.25rem 0;
+}
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.product-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 1px solid rgba(5, 43, 33, 0.1);
+}
+
+.review-card {
+  border: 1px solid rgba(5, 43, 33, 0.08);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+}
+
+.icon-pill {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(199, 162, 67, 0.12);
+  color: #C7A243;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */
