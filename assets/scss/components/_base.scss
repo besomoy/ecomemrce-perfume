@@ -66,6 +66,10 @@ a {
     background-color: $neutral-300 !important;
 }
 
+.bg-footer {
+    background-color: $bg-footer !important;
+}
+
 // Legacy Theme Aliases
 .text-luxury-gold {
     @extend .text-primary;

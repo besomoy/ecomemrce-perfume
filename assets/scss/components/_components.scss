@@ -272,3 +272,96 @@
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
 }
+
+// Footer Components
+.footer-social-link {
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $primary;
+        border-color: $primary;
+        color: white;
+        transform: translateY(-2px);
+    }
+}
+
+.footer-newsletter-form {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    .form-control {
+        min-height: 44px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-radius: 0;
+        font-size: 0.9rem;
+        padding-left: 0;
+
+        &::placeholder {
+            color: $neutral-400;
+        }
+
+        &:focus {
+            box-shadow: none;
+            background-color: transparent;
+        }
+    }
+
+    .btn-subscribe {
+        min-height: 44px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-radius: 0;
+        padding-left: 1rem;
+        padding-right: 0;
+        font-size: 0.85rem;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.footer-bottom-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 80px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    p {
+        color: #9ca3af; // Gray-400
+        font-size: 0.85rem;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+    }
+}
+
+.payment-icon {
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 4px;
+    border-radius: 2px;
+    margin-left: 0.5rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+
+    &:hover {
+        opacity: 1;
+    }
+}

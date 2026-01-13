@@ -568,65 +568,121 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-footer text-white py-section border-top border-secondary">
+    <footer class="bg-footer text-white border-top border-secondary" style="padding-top: 80px;">
         <div class="container">
             <div class="row g-5">
-                <div class="col-md-6 col-lg-3">
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
                     <a href="#" class="mb-4 d-block">
-                        <img src="./assets/images/logo.svg" alt="Scent & Aura" height="30">
+                        <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
                     </a>
-                    <p class="text-gray-500 small fw-light mb-4" style="line-height: 2;">
-                        Redefining the standards of niche perfumery. Each bottle is a testament to the art of scent,
-                        crafted with heart and history.
-                    </p>
-                    <div class="d-flex gap-4">
-                        <a href="#" class="text-gray-500 hover:text-primary"><i data-lucide="instagram"
-                                width="18"></i></a>
-                        <a href="#" class="text-gray-500 hover:text-primary"><i data-lucide="facebook"
-                                width="18"></i></a>
-                        <a href="#" class="text-gray-500 hover:text-primary"><i data-lucide="twitter"
-                                width="18"></i></a>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0 text-gray-400 small fw-light">
+                            Address: 1234 Fashion Street, Suite 567,<br> New York, NY 10001
+                        </p>
+                        <p class="mb-0 text-gray-400 small fw-light">
+                            Email: <a href="mailto:info@fashionshop.com"
+                                class="text-gray-400 hover:text-primary">info@fashionshop.com</a>
+                        </p>
+                        <p class="mb-0 text-gray-400 small fw-light">
+                            Phone: <span class="text-primary">(212) 555-1234</span>
+                        </p>
+                        <a href="#"
+                            class="text-primary small text-decoration-underline mt-1 d-inline-flex align-items-center gap-1 hover:text-white transition-colors">
+                            Get direction <i data-lucide="arrow-up-right" width="14"></i>
+                        </a>
+
+                        <div class="d-flex gap-2 mt-3">
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="facebook" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="twitter" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="instagram" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="music-2" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="pin" width="16"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <h4 class="small text-uppercase tracking-widest-custom mb-4 text-primary fw-bold">The House</h4>
-                    <ul class="list-unstyled text-gray-400 small fw-light d-flex flex-column gap-3">
-                        <li><a href="#">Our Heritage</a></li>
-                        <li><a href="#">The Alchemist</a></li>
-                        <li><a href="#">Sourcing</a></li>
-                        <li><a href="#">Careers</a></li>
+                <!-- Help -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">Help</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Returns + Exchanges</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Shipping</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">FAQ's</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Compare</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">My Wishlist</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <h4 class="small text-uppercase tracking-widest-custom mb-4 text-primary fw-bold">Services</h4>
-                    <ul class="list-unstyled text-gray-400 small fw-light d-flex flex-column gap-3">
-                        <li><a href="#">Private Viewing</a></li>
-                        <li><a href="#">Bespoke Gifting</a></li>
-                        <li><a href="#">Shipping Palais</a></li>
-                        <li><a href="#">Customer Care</a></li>
+                <!-- About Us -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">About us</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="#" class="hover:text-primary transition-colors">Our Story</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Visit Our Store</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Account</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <h4 class="small text-uppercase tracking-widest-custom mb-4 text-primary fw-bold">Palais des
-                        Parfums</h4>
-                    <p class="text-gray-400 small fw-light" style="line-height: 2;">
-                        18 Place Vendôme, <br>
-                        75001 Paris, France <br>
-                        +33 1 00 00 00 00
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">Sign Up for Email</h5>
+                    <p class="text-gray-400 small mb-4 fw-light">
+                        Sign up to get first dibs on new arrivals, sales, exclusive content, events and more!
                     </p>
-                    <p class="mt-4 text-gray-500 small fst-italic">Open daily from 10:00 to 19:00</p>
+                    <form class="mb-4 footer-newsletter-form">
+                        <input type="email" class="form-control" placeholder="Enter your email..."
+                            aria-label="Enter your email">
+                        <button class="btn-subscribe" type="submit">
+                            Subscribe <i data-lucide="arrow-up-right" width="14" class="ms-2"></i>
+                        </button>
+                    </form>
+
+                    <div class="d-flex gap-4">
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 border-0 small d-flex align-items-center gap-1"
+                                type="button" data-bs-toggle="dropdown">
+                                USD
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">GBP</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 border-0 small d-flex align-items-center gap-1"
+                                type="button" data-bs-toggle="dropdown">
+                                English
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Français</a></li>
+                                <li><a class="dropdown-item" href="#">Español</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div
-                class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center small text-gray-500 tracking-widest-custom fw-medium">
-                <p>&copy; 2026 Scent & Aura. ALL RIGHTS RESERVED.</p>
-                <div class="d-flex gap-4 mt-3 mt-md-0">
-                    <a href="#">CONFIDENTIALITY</a>
-                    <a href="#">TERMS OF SALE</a>
+            <!-- Bottom Bar -->
+            <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0">&copy; 2026 Scent & Aura. All Rights Reserved</p>
+                <div class="d-flex gap-2">
+                    <img src="./assets/images/payment.png" alt="Payment Methods" width="300">
                 </div>
             </div>
         </div>
