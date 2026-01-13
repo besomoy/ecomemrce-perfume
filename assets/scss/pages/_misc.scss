@@ -1,0 +1,139 @@
+// Misc Pages (Blog, FAQ, Contact, etc)
+
+.page-header {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(to bottom, #f8f9fa, #fff);
+    text-align: center;
+
+    h1 {
+        font-family: $font-serif;
+        font-size: 3.5rem;
+        color: $secondary-dark;
+        margin-bottom: 1rem;
+
+        @media (max-width: 768px) {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.breadcrumb {
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+
+    .breadcrumb-item a {
+        color: $neutral-500;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .breadcrumb-item.active {
+        color: $primary;
+    }
+}
+
+// Blog
+.blog-card {
+    border: none;
+    background: transparent;
+
+    .blog-img {
+        border-radius: 1.5rem;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+        aspect-ratio: 4/3;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+
+        &:hover img {
+            transform: scale(1.05);
+        }
+    }
+
+    .blog-meta {
+        font-size: 0.8rem;
+        color: $primary;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 0.5rem;
+    }
+
+    .blog-title {
+        font-family: $font-serif;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+
+        a {
+            color: $secondary-dark;
+            text-decoration: none;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+// FAQ
+.accordion-custom {
+    .accordion-item {
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid #e5e7eb;
+
+        .accordion-button {
+            background: transparent;
+            font-family: $font-serif;
+            font-size: 1.25rem;
+            color: $secondary-dark;
+            padding: 1.5rem 0;
+            box-shadow: none;
+
+            &:not(.collapsed) {
+                color: $primary;
+            }
+
+            &::after {
+                background-size: 1rem;
+            }
+        }
+
+        .accordion-body {
+            padding: 0 0 1.5rem;
+            color: $neutral-600;
+            line-height: 1.7;
+        }
+    }
+}
+
+// Contact
+.contact-info-box {
+    padding: 2rem;
+    background: #f9fffb;
+    border-radius: 1rem;
+    height: 100%;
+
+    .icon-box {
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $primary;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,52 @@
+// Auth Pages
+.auth-wrapper {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9fffb;
+    padding: 4rem 0;
+}
+
+.auth-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+
+    .logo-area {
+        margin-bottom: 2rem;
+
+        img {
+            height: 40px;
+        }
+    }
+
+    h1 {
+        font-family: $font-serif;
+        margin-bottom: 0.5rem;
+        color: $secondary-dark;
+    }
+
+    .auth-subtitle {
+        color: $neutral-500;
+        margin-bottom: 2rem;
+    }
+
+    .form-control {
+        background: $neutral-100;
+        border: 1px solid transparent;
+        padding: 0.8rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+
+        &:focus {
+            background: white;
+            border-color: $primary;
+            box-shadow: 0 0 0 3px rgba($primary, 0.1);
+        }
+    }
+}

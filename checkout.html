@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Scent & Aura</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/vendor/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-custom" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
+            </a>
+            <!-- Links omitted for brevity but should be consistent -->
+            <div class="nav-links">
+                <div class="nav-item-has-dropdown">
+                    <a href="index.html">Home <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="index.html">Luxury Default</a>
+                        <a href="index-2.html">Modern Atelier</a>
+                    </div>
+                </div>
+                <div class="nav-item-has-dropdown">
+                    <a href="shop-right-sidebar.html">Shop <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="shop-right-sidebar.html">Shop Sidebar</a>
+                        <a href="product-details.html">Product Details</a>
+                        <a href="cart.html">Cart</a>
+                        <a href="checkout.html">Checkout</a>
+                    </div>
+                </div>
+                <a href="about-us.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <div class="nav-item-has-dropdown">
+                    <a href="blog.html">Blog <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="blog.html">Journal Standard</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-icons">
+                <button title="Search"><i data-lucide="search" width="20"></i></button>
+                <a href="sign-in.html" title="Account"><i data-lucide="user" width="20"></i></a>
+                <button class="position-relative" title="Wishlist">
+                    <i data-lucide="heart" width="20"></i>
+                    <span class="cart-badge">0</span>
+                </button>
+                <a href="cart.html" class="position-relative" title="Cart">
+                    <i data-lucide="shopping-bag" width="20"></i>
+                    <span class="cart-badge">2</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="display-3 mb-3">Checkout</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="cart.html">Cart</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Checkout Content -->
+    <section class="py-section bg-surface">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Billing Details -->
+                <div class="col-lg-7">
+                    <h3 class="font-serif mb-4 text-secondary-dark">Billing Details</h3>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label
+                                    class="form-label small text-uppercase tracking-widest-custom fw-bold text-gray-400">First
+                                    Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control rounded-0 p-3 bg-white border-light" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label
+                                    class="form-label small text-uppercase tracking-widest-custom fw-bold text-gray-400">Last
+                                    Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control rounded-0 p-3 bg-white border-light" required>
+                            </div>
+                            <div class="col-12">
+                                <label
+                                    class="form-label small text-uppercase tracking-widest-custom fw-bold text-gray-400">Company
+                                    Name (Optional)</label>
+                                <input type="text" class="form-control rounded-0 p-3 bg-white border-light">
+                            </div>
+                            <div class="col-12">
+                                <label
+                                    class="form-label small text-uppercase tracking-widest-custom fw-bold text-gray-400">Country
+                                    / Region <span class="text-danger">*</span></label>
+                                <select class="form-select rounded-0 p-3 bg-white border-light">
+                                    <option selected>United States (US)</option>
+                                    <option>United Kingdom</option>
+                                    <option>France</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label
+                                    class="form-label small text-uppercase tracking-widest-custom fw-bold text-gray-400">Street
+                                    Address <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control rounded-0 p-3 bg-white border-light mb-2"
+                                    placeholder="House number and street name" required>
+                                <input type="text" class="form-control rounded-0 p-3 bg-white border-light"
+                                    placeholder="Apartment, suite, unit, etc. (optional)">
+                            </div>
+                            <div class="col-sm-6">
+                                <label
+                                    class="form-label small text-uppercase tracking-widest-custom fw-bold text-gray-400">Town
+                                    / City <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control rounded-0 p-3 bg-white border-light" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label
+                                    class="form-label small text-uppercase tracking-widest-custom fw-bold text-gray-400">State
+                                    <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control rounded-0 p-3 bg-white border-light" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label
+                                    class="form-label small text-uppercase tracking-widest-custom fw-bold text-gray-400">ZIP
+                                    Code <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control rounded-0 p-3 bg-white border-light" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label
+                                    class="form-label small text-uppercase tracking-widest-custom fw-bold text-gray-400">Phone
+                                    <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control rounded-0 p-3 bg-white border-light" required>
+                            </div>
+                            <div class="col-12">
+                                <label
+                                    class="form-label small text-uppercase tracking-widest-custom fw-bold text-gray-400">Email
+                                    Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control rounded-0 p-3 bg-white border-light" required>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="createAccount">
+                                    <label class="form-check-label" for="createAccount">Create an account?</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label
+                                    class="form-label small text-uppercase tracking-widest-custom fw-bold text-gray-400">Order
+                                    Notes (Optional)</label>
+                                <textarea class="form-control rounded-0 p-3 bg-white border-light" rows="4"
+                                    placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="col-lg-5">
+                    <div class="checkout-summary bg-white border border-light shadow-sm sticky-top"
+                        style="top: 100px; z-index: 1;">
+                        <h3>Your Order</h3>
+                        <div
+                            class="d-flex justify-content-between border-bottom pb-3 mb-3 fw-bold text-uppercase small text-gray-500">
+                            <span>Product</span>
+                            <span>Subtotal</span>
+                        </div>
+
+                        <!-- Items -->
+                        <div class="d-flex justify-content-between mb-3 text-secondary-dark">
+                            <span>Vampire Blood <strong class="text-gray-400">x 1</strong></span>
+                            <span>$125.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3 text-secondary-dark">
+                            <span>Hawas Fire <strong class="text-gray-400">x 1</strong></span>
+                            <span>$180.00</span>
+                        </div>
+
+                        <div class="border-top my-3"></div>
+
+                        <div class="summary-item">
+                            <span>Subtotal</span>
+                            <span class="fw-bold text-secondary-dark">$305.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Shipping</span>
+                            <span>$15.00</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total</span>
+                            <span>$320.00</span>
+                        </div>
+
+                        <div class="payment-methods mt-4 mb-4">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer"
+                                    checked>
+                                <label class="form-check-label fw-bold secondary-dark" for="bankTransfer">Direct Bank
+                                    Transfer</label>
+                                <p class="small text-muted mt-1 ps-1">Make your payment directly into our bank account.
+                                    Your order will not be shipped until the funds have cleared in our account.</p>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="cod">
+                                <label class="form-check-label fw-bold secondary-dark" for="cod">Cash on
+                                    Delivery</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="paypal">
+                                <label class="form-check-label fw-bold secondary-dark" for="paypal">PayPal</label>
+                            </div>
+                        </div>
+
+                        <p class="small text-muted mb-4">Your personal data will be used to process your order, support
+                            your experience throughout this website, and for other purposes described in our <a href="#"
+                                class="text-primary">privacy policy</a>.</p>
+
+                        <button class="btn btn--primary w-100 py-3">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-white border-secondary" style="padding-top: 80px;">
+        <!-- Standard Footer -->
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="mb-4 d-block">
+                        <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
+                    </a>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0 text-gray-400 small fw-light">Address: 1234 Fashion Street, Suite 567,<br> New
+                            York, NY 10001</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">Help</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="faq.html" class="hover:text-primary">FAQ's</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">About us</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="contact.html" class="hover:text-primary">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Newsletter -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/lucide/lucide.js"></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

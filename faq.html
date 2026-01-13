@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Scent & Aura</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/vendor/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-custom" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
+            </a>
+            <div class="nav-links">
+                <div class="nav-item-has-dropdown">
+                    <a href="index.html">Home <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="index.html">Luxury Default</a>
+                        <a href="index-2.html">Modern Atelier</a>
+                    </div>
+                </div>
+                <div class="nav-item-has-dropdown">
+                    <a href="shop-right-sidebar.html">Shop <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="shop-right-sidebar.html">Shop Sidebar</a>
+                        <a href="product-details.html">Product Details</a>
+                        <a href="cart.html">Cart</a>
+                        <a href="checkout.html">Checkout</a>
+                    </div>
+                </div>
+                <a href="about-us.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <button title="Search"><i data-lucide="search" width="20"></i></button>
+                <a href="sign-in.html" title="Account"><i data-lucide="user" width="20"></i></a>
+                <button class="position-relative" title="Wishlist">
+                    <i data-lucide="heart" width="20"></i>
+                    <span class="cart-badge">0</span>
+                </button>
+                <a href="cart.html" class="position-relative" title="Cart">
+                    <i data-lucide="shopping-bag" width="20"></i>
+                    <span class="cart-badge">2</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="display-3 mb-3">Frequently Asked Questions</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- FAQ Content -->
+    <section class="py-section bg-surface">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion accordion-custom" id="faqAccordion">
+                        <!-- Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Why is my perfume not lasting?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The longevity of a perfume depends on several factors, including skin type,
+                                    humidity, and the concentration of the fragrance. Dry skin absorbs perfume quickly,
+                                    so we recommend moisturizing before application. Also, applying to pulse points
+                                    (wrist, neck, behind ears) helps diffuse the scent throughout the day.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can I track my order?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Once your order is shipped, you will receive a confirmation email containing a
+                                    tracking number. You can use this number on our website under the "Track Order"
+                                    section or directly on the courier's website to monitor your shipment.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What is your return policy?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We accept returns within 30 days of purchase for unopened and unused items in their
+                                    original packaging. Please note that opened perfumes cannot be returned due to
+                                    hygiene and health regulations. If you received a damaged item, please contact our
+                                    support team immediately.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Do you ship internationally?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we ship to over 50 countries worldwide. Shipping costs and delivery times vary
+                                    depending on the destination. You can view the estimated shipping cost at checkout
+                                    before making a payment.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How do I choose the right scent for me?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Choosing a scent is a personal journey. We recommend exploring our "Olfactory
+                                    Families" guide to understand if you prefer fresh, floral, woody, or oriental notes.
+                                    You can also purchase our discovery set to try smaller samples before committing to
+                                    a full-sized bottle.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-white border-secondary" style="padding-top: 80px;">
+        <!-- Footer Content -->
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="mb-4 d-block">
+                        <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
+                    </a>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0 text-gray-400 small fw-light">Address: 1234 Fashion Street, Suite 567,<br> New
+                            York, NY 10001</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">Help</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="faq.html" class="hover:text-primary">FAQ's</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">About us</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="contact.html" class="hover:text-primary">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0">&copy; 2026 Scent & Aura. All Rights Reserved</p>
+                <div class="d-flex gap-2">
+                    <img src="./assets/images/payment.png" alt="Payment Methods" width="300" style="opacity: 0.7;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/lucide/lucide.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

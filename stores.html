@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Locator | Scent & Aura</title>
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <script src="./assets/vendor/lucide/lucide.js"></script>
+</head>
+
+<body>
+    <nav class="navbar-custom" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="logo"><img src="./assets/images/logo.svg" height="28"></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop-right-sidebar.html">Shop</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-icons"><a href="cart.html"><i data-lucide="shopping-bag" width="20"></i></a></div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 class="display-3 mb-3">Find a Boutique</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Stores</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <section class="py-section bg-white">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="mb-4">
+                        <input type="text" class="form-control rounded-0 p-3"
+                            placeholder="Search by city or zip code...">
+                    </div>
+
+                    <div class="store-list d-flex flex-column gap-3" style="max-height: 500px; overflow-y: auto;">
+                        <div class="card border-0 bg-surface p-4">
+                            <h5 class="font-serif text-secondary-dark mb-2">Palais Vendôme</h5>
+                            <p class="small text-gray-500 mb-2">18 Place Vendôme, 75001 Paris, France</p>
+                            <p class="small text-primary mb-3">Open • Closes 8PM</p>
+                            <a href="#" class="btn btn-outline-secondary btn-sm w-100">View Details</a>
+                        </div>
+                        <div class="card border-0 bg-surface p-4">
+                            <h5 class="font-serif text-secondary-dark mb-2">New York Flagship</h5>
+                            <p class="small text-gray-500 mb-2">1234 Fashion Street, NY 10001, USA</p>
+                            <p class="small text-primary mb-3">Open • Closes 9PM</p>
+                            <a href="#" class="btn btn-outline-secondary btn-sm w-100">View Details</a>
+                        </div>
+                        <div class="card border-0 bg-surface p-4">
+                            <h5 class="font-serif text-secondary-dark mb-2">The Orchid Tower</h5>
+                            <p class="small text-gray-500 mb-2">Unit 402, Level 2, Dubai Mall, UAE</p>
+                            <p class="small text-danger mb-3">Closed • Opens 10AM</p>
+                            <a href="#" class="btn btn-outline-secondary btn-sm w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629783512345!5m2!1sen!2sus"
+                        width="100%" height="600" style="border:0; filter: grayscale(1);" allowfullscreen=""
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-footer text-white py-4 text-center">
+        <p class="mb-0 small">&copy; 2026 Scent & Aura</p>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

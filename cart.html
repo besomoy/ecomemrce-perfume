@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Scent & Aura</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/vendor/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-custom" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
+            </a>
+
+            <div class="nav-links">
+                <div class="nav-item-has-dropdown">
+                    <a href="index.html">Home <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="index.html">Luxury Default</a>
+                        <a href="index-2.html">Modern Atelier</a>
+                        <a href="#">Minimal House</a>
+                    </div>
+                </div>
+                <div class="nav-item-has-dropdown">
+                    <a href="shop-right-sidebar.html">Shop <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="shop-right-sidebar.html">Shop Sidebar</a>
+                        <a href="product-details.html">Product Details</a>
+                        <a href="cart.html">Cart</a>
+                        <a href="checkout.html">Checkout</a>
+                    </div>
+                </div>
+                <a href="about-us.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <div class="nav-item-has-dropdown">
+                    <a href="blog.html">Blog <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="blog.html">Journal Standard</a>
+                        <a href="blog-details.html">Single Post</a>
+                    </div>
+                </div>
+                <div class="nav-item-has-dropdown">
+                    <a href="#">Pages <i data-lucide="chevron-down" width="12"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="faq.html">FAQ</a>
+                        <a href="stores.html">Store Locator</a>
+                        <a href="sign-in.html">Sign In</a>
+                        <a href="sign-up.html">Sign Up</a>
+                        <a href="404.html">404 Error</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-icons">
+                <button title="Search"><i data-lucide="search" width="20"></i></button>
+                <a href="sign-in.html" title="Account"><i data-lucide="user" width="20"></i></a>
+                <button class="position-relative" title="Wishlist">
+                    <i data-lucide="heart" width="20"></i>
+                    <span class="cart-badge">0</span>
+                </button>
+                <a href="cart.html" class="position-relative" title="Cart">
+                    <i data-lucide="shopping-bag" width="20"></i>
+                    <span class="cart-badge">2</span>
+                </a>
+                <button class="d-lg-none" title="Menu"><i data-lucide="menu" width="22"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="display-3 mb-3">Shopping Bag</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Cart Content -->
+    <section class="py-section bg-surface">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Cart List -->
+                <div class="col-lg-8">
+                    <div class="bg-white p-4 rounded-3 shadow-sm border border-light">
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Subtotal</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product-col">
+                                        <img src="./assets/images/product-3.png" alt="Product">
+                                        <div>
+                                            <h5 class="mb-1 font-serif fs-5">Vampire Blood</h5>
+                                            <p class="mb-0 small text-muted">Size: 50ml</p>
+                                        </div>
+                                    </td>
+                                    <td class="fw-bold">$125.00</td>
+                                    <td>
+                                        <div class="quantity-control" style="width: 100px;">
+                                            <button class="px-2">-</button>
+                                            <input type="text" value="1" class="w-100 text-center bg-transparent">
+                                            <button class="px-2">+</button>
+                                        </div>
+                                    </td>
+                                    <td class="fw-bold text-primary">$125.00</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-link text-danger p-0"><i data-lucide="trash-2"
+                                                width="18"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-col">
+                                        <img src="./assets/images/product-2.png" alt="Product">
+                                        <div>
+                                            <h5 class="mb-1 font-serif fs-5">Hawas Fire</h5>
+                                            <p class="mb-0 small text-muted">Size: 100ml</p>
+                                        </div>
+                                    </td>
+                                    <td class="fw-bold">$180.00</td>
+                                    <td>
+                                        <div class="quantity-control" style="width: 100px;">
+                                            <button class="px-2">-</button>
+                                            <input type="text" value="1" class="w-100 text-center bg-transparent">
+                                            <button class="px-2">+</button>
+                                        </div>
+                                    </td>
+                                    <td class="fw-bold text-primary">$180.00</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-link text-danger p-0"><i data-lucide="trash-2"
+                                                width="18"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="col-lg-4">
+                    <div class="cart-summary bg-white border border-light shadow-sm">
+                        <h3>Cart Totals</h3>
+                        <div class="summary-item">
+                            <span>Subtotal</span>
+                            <span class="fw-bold">$305.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Shipping</span>
+                            <span>$15.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Tax (5%)</span>
+                            <span>$15.25</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total</span>
+                            <span>$335.25</span>
+                        </div>
+
+                        <a href="checkout.html" class="btn btn--primary w-100 mt-4 py-3">Proceed to Checkout</a>
+                        <a href="shop-right-sidebar.html"
+                            class="btn btn-link text-muted w-100 mt-2 text-decoration-none small">Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-white border-secondary" style="padding-top: 80px;">
+        <!-- Same as index Footer -->
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="mb-4 d-block">
+                        <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
+                    </a>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0 text-gray-400 small fw-light">Address: 1234 Fashion Street, Suite 567,<br> New
+                            York, NY 10001</p>
+                        <p class="mb-0 text-gray-400 small fw-light">Email: <a href="mailto:info@fashionshop.com"
+                                class="text-gray-400 hover:text-primary">info@fashionshop.com</a></p>
+                        <p class="mb-0 text-gray-400 small fw-light">Phone: <span class="text-primary">(212)
+                                555-1234</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">Help</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary">Returns + Exchanges</a></li>
+                        <li><a href="#" class="hover:text-primary">Shipping</a></li>
+                        <li><a href="faq.html" class="hover:text-primary">FAQ's</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">About us</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="about-us.html" class="hover:text-primary">Our Story</a></li>
+                        <li><a href="stores.html" class="hover:text-primary">Visit Our Store</a></li>
+                        <li><a href="contact.html" class="hover:text-primary">Contact Us</a></li>
+                        <li><a href="sign-in.html" class="hover:text-primary">Account</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">Sign Up for Email</h5>
+                    <form class="mb-4 footer-newsletter-form">
+                        <input type="email" class="form-control" placeholder="Enter your email...">
+                        <button class="btn-subscribe" type="submit">Subscribe <i data-lucide="arrow-up-right" width="14"
+                                class="ms-2"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0">&copy; 2026 Scent & Aura. All Rights Reserved</p>
+                <div class="d-flex gap-2">
+                    <img src="./assets/images/payment.png" alt="Payment Methods" width="300" style="opacity: 0.7;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/lucide/lucide.js"></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
