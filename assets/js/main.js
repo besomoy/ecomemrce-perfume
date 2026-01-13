@@ -116,3 +116,39 @@ if (cartBtn) {
         });
     }
 }
+
+// Product Size Selection Logic
+const productCards = document.querySelectorAll('.sc-product-card');
+
+productCards.forEach(card => {
+    const sizeBtns = card.querySelectorAll('.size-btn');
+    const addBtn = card.querySelector('.add-btn');
+
+    if (sizeBtns.length > 0 && addBtn) {
+        sizeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active from all siblings
+                sizeBtns.forEach(b => b.classList.remove('active'));
+
+                // Add active to clicked
+                btn.classList.add('active');
+
+                // Update Price
+                const price = btn.getAttribute('data-price');
+                const priceEl = card.querySelector('.price-wrapper .price');
+                if (price && priceEl) {
+                    priceEl.innerText = price + '৳';
+                }
+
+                // Enable Add to Cart button
+                addBtn.classList.remove('disabled');
+                addBtn.innerHTML = '<i data-lucide="shopping-bag" width="16"></i> Add To Cart';
+
+                // Refresh icons
+                if (typeof lucide !== 'undefined') {
+                    lucide.createIcons();
+                }
+            });
+        });
+    }
+});

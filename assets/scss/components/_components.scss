@@ -367,3 +367,198 @@
         opacity: 1;
     }
 }
+
+// Special Creative Product Card (Popular Items)
+.sc-product-card {
+    background: #ffffff;
+    border-radius: 12px; // Modern, slightly rounded
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    transition: all 0.4s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        // transform: translateY(-5px); // Removed to prevent height jump
+    }
+
+    .card-badges {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 10;
+
+        .wishlist-btn {
+            width: 35px;
+            height: 35px;
+            background: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: $neutral-400;
+            transition: all 0.3s;
+            border: none;
+
+            &:hover {
+                color: #e31b23;
+                background: #fff0f0;
+            }
+        }
+    }
+
+    .img-wrapper {
+        position: relative;
+        background: radial-gradient(circle at center, #f8f8f8 0%, #ffffff 70%); // Subtle gradient bg for product
+        padding: 0;
+        text-align: center;
+        height: 320px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; // Ensure animation stays inside
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+    }
+
+    &:hover .img-wrapper img {
+        transform: scale(1.08);
+    }
+
+    .card-content {
+        padding: 1.5rem;
+        text-align: center;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-title {
+        font-family: $font-serif;
+        font-size: 1.25rem;
+        color: $neutral-700;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+    .rating-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 1rem;
+
+        .stars {
+            color: #ff9d00; // Gold star color
+            display: flex;
+            gap: 2px;
+        }
+
+        .review-count {
+            color: $neutral-400;
+            font-size: 0.8rem;
+            margin-left: 5px;
+        }
+    }
+
+    .size-options {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 1rem;
+
+        .size-btn {
+            background: transparent;
+            border: 1px solid #e0e0e0;
+            padding: 4px 8px;
+            font-size: 0.75rem;
+            color: $neutral-400;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+                border-color: $primary;
+                color: $primary;
+            }
+
+            &.active {
+                border-color: $primary;
+                color: white;
+                background: $primary;
+            }
+        }
+    }
+
+    .price-wrapper {
+        margin-bottom: 1.5rem;
+        color: $neutral-700;
+
+        .price {
+            font-size: 1.35rem;
+            font-weight: 700;
+            font-family: $font-serif;
+            color: $secondary-dark;
+        }
+
+        .label {
+            font-size: 0.85rem;
+            color: $neutral-400;
+        }
+    }
+
+    .add-btn {
+        width: 100%;
+        background-color: $primary;
+        color: white;
+        border: none;
+        padding: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.85rem;
+        border-radius: 6px;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $secondary-dark;
+            color: $primary;
+        }
+
+        &.disabled {
+            background-color: rgba(0, 0, 0, 0.05); // Very light grey
+            color: $neutral-400; // Muted text
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            cursor: not-allowed;
+            box-shadow: none;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.05);
+                color: $neutral-400;
+            }
+        }
+    }
+
+    // For smaller screens or grids, ensure images scale
+    @media (max-width: 768px) {
+        .img-wrapper {
+            height: 200px;
+        }
+    }
+}

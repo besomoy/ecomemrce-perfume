@@ -361,72 +361,173 @@
         </div>
     </section>
 
-    <!-- Boutique Section -->
+    <!-- Popular Items Section (Replaces Boutique) -->
     <section id="shop" class="py-section bg-surface">
         <div class="container">
-            <div class="text-center mb-section reveal">
-                <span class="text-secondary text-uppercase tracking-widest-custom small fw-bold">The Boutique</span>
-                <h2 class="display-4 text-secondary-dark mt-3">Essential Curations</h2>
+            <div class="text-center mb-5 reveal">
+                <span class="d-block small fw-bold text-uppercase text-gray-400 mb-2 tracking-widest-custom">Best
+                    Seller</span>
+                <h2 class="display-4 font-serif text-secondary-dark">
+                    Currently <span class="text-primary">Popular Items</span>
+                </h2>
+                <div class="mx-auto mt-3" style="width: 60px; height: 2px; background-color: #C7A243;"></div>
             </div>
 
-            <div class="row g-5">
-                <!-- Product 1: Santal & Noir -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="product-card reveal">
-                        <div class="img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800"
-                                alt="Santal & Noir">
-                            <div class="quick-view">
-                                <button class="btn btn--primary">Quick View</button>
-                            </div>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="sc-product-card reveal">
+                        <div class="card-badges">
+                            <button class="wishlist-btn" title="Add to Wishlist">
+                                <i data-lucide="heart" width="18"></i>
+                            </button>
                         </div>
-                        <div class="text-center">
-                            <h3 class="h4 font-serif mb-2">Santal & Noir</h3>
-                            <p class="text-gray-500 small text-uppercase tracking-widest-custom mb-3">Signature Series
-                            </p>
-                            <span class="fs-4 font-serif text-primary">$185</span>
+                        <div class="img-wrapper">
+                            <img src="./assets/images/product-3.png" alt="Vampire Blood">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-title">Vampire Blood</h3>
+                            <div class="rating-wrapper">
+                                <div class="stars">
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                </div>
+                                <span class="review-count">(120)</span>
+                            </div>
+                            <div class="size-options">
+                                <button class="size-btn" data-price="300">3ML</button>
+                                <button class="size-btn" data-price="600">6ML</button>
+                                <button class="size-btn" data-price="1200">12ML</button>
+                            </div>
+                            <div class="price-wrapper">
+                                <span class="price">600৳</span>
+                                <span class="label">/starting</span>
+                            </div>
+                            <button class="add-btn disabled">
+                                Select A Size First
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Product 2: Rose Privée -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="product-card reveal delay-200">
-                        <div class="img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1592914610354-fd354ea45e48?auto=format&fit=crop&q=80&w=800"
-                                alt="Rose Privée">
-                            <div class="quick-view">
-                                <button class="btn btn--primary">Quick View</button>
-                            </div>
+                <!-- Product 2 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="sc-product-card reveal delay-100">
+                        <div class="card-badges">
+                            <button class="wishlist-btn" title="Add to Wishlist">
+                                <i data-lucide="heart" width="18"></i>
+                            </button>
                         </div>
-                        <div class="text-center">
-                            <h3 class="h4 font-serif mb-2">Rose Privée</h3>
-                            <p class="text-gray-500 small text-uppercase tracking-widest-custom mb-3">Collection d'Or
-                            </p>
-                            <span class="fs-4 font-serif text-primary">$210</span>
+                        <div class="img-wrapper">
+                            <img src="./assets/images/product-2.png" alt="Hawas Fire">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-title">Hawas Fire</h3>
+                            <div class="rating-wrapper">
+                                <div class="stars">
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star-half" width="14" fill="#ff9d00"></i>
+                                </div>
+                                <span class="review-count">(85)</span>
+                            </div>
+                            <div class="size-options">
+                                <button class="size-btn" data-price="275">3ML</button>
+                                <button class="size-btn" data-price="550">6ML</button>
+                                <button class="size-btn" data-price="1100">12ML</button>
+                            </div>
+                            <div class="price-wrapper">
+                                <span class="price">550৳</span>
+                                <span class="label">/starting</span>
+                            </div>
+                            <button class="add-btn disabled">
+                                Select A Size First
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Product 3: Vetiver Cloud -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="product-card reveal delay-400">
-                        <div class="img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=800"
-                                alt="Vetiver Cloud">
-                            <div class="quick-view">
-                                <button class="btn btn--primary">Quick View</button>
-                            </div>
+                <!-- Product 3 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="sc-product-card reveal delay-200">
+                        <div class="card-badges">
+                            <button class="wishlist-btn" title="Add to Wishlist">
+                                <i data-lucide="heart" width="18"></i>
+                            </button>
                         </div>
-                        <div class="text-center">
-                            <h3 class="h4 font-serif mb-2">Vetiver Cloud</h3>
-                            <p class="text-gray-500 small text-uppercase tracking-widest-custom mb-3">Azure Line</p>
-                            <span class="fs-4 font-serif text-primary">$165</span>
+                        <div class="img-wrapper">
+                            <!-- Using a different tint/style for variety if possible, essentially reusing images but different context -->
+                            <img src="./assets/images/product-1.jpg" alt="Sweet Mood">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-title">Sweet Mood</h3>
+                            <div class="rating-wrapper">
+                                <div class="stars">
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                </div>
+                                <span class="review-count">(200+)</span>
+                            </div>
+                            <div class="size-options">
+                                <button class="size-btn" data-price="375">3ML</button>
+                                <button class="size-btn" data-price="750">6ML</button>
+                                <button class="size-btn" data-price="1500">12ML</button>
+                            </div>
+                            <div class="price-wrapper">
+                                <span class="price">750৳</span>
+                                <span class="label">/starting</span>
+                            </div>
+                            <button class="add-btn disabled">
+                                Select A Size First
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Actually, I should update the 'View Full Collections' button at the bottom of Shop section -->
+                <!-- Product 4 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="sc-product-card reveal delay-300">
+                        <div class="card-badges">
+                            <button class="wishlist-btn" title="Add to Wishlist">
+                                <i data-lucide="heart" width="18"></i>
+                            </button>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="./assets/images/product-3.png" alt="Rich Combo">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-title">Rich Combo</h3>
+                            <div class="rating-wrapper">
+                                <div class="stars">
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                    <i data-lucide="star" width="14" fill="#ff9d00"></i>
+                                </div>
+                                <span class="review-count">(45)</span>
+                            </div>
+                            <div class="size-options">
+                                <button class="size-btn" data-price="1200">Combo</button>
+                            </div>
+                            <div class="price-wrapper">
+                                <span class="price">1200৳</span>
+                                <span class="label">/set</span>
+                            </div>
+                            <button class="add-btn disabled">
+                                Select A Size First
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="mt-5 text-center pt-5">
