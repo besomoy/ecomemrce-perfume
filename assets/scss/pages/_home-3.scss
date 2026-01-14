@@ -27,6 +27,7 @@
 .page-index-3 .navbar-forest .nav-forest-inner {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
+  grid-template-areas: "links logo icons";
   align-items: center;
   gap: 24px;
   background: rgba(247, 244, 236, 0.82);
@@ -38,15 +39,18 @@
 }
 
 .page-index-3 .navbar-forest .nav-forest-logo {
+  grid-area: logo;
   justify-self: center;
 }
 
 .page-index-3 .navbar-forest .nav-forest-icons {
+  grid-area: icons;
   justify-self: end;
 }
 
 .page-index-3 .navbar-forest .nav-links {
-  justify-content: center;
+  grid-area: links;
+  justify-content: flex-start;
   gap: 28px;
   flex-wrap: wrap;
 }
@@ -84,6 +88,10 @@
 
 .page-index-3 .navbar-forest.scrolled {
   padding: 16px 0;
+  background-color: transparent;
+  border-bottom: none;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .page-index-3 .navbar-forest.scrolled .nav-forest-inner {
@@ -100,6 +108,16 @@
 .page-index-3 .forest-hero {
   position: relative;
   overflow: hidden;
+}
+
+.page-index-3 .hero-slider {
+  height: auto;
+  min-height: 100vh;
+}
+
+.page-index-3 .hero-slider .swiper-wrapper,
+.page-index-3 .hero-slider .swiper-slide {
+  height: auto;
 }
 
 .page-index-3 .forest-hero .swiper-pagination {
@@ -830,6 +848,7 @@
 @media (max-width: 991px) {
   .page-index-3 .navbar-forest .nav-forest-inner {
     grid-template-columns: auto auto;
+    grid-template-areas: "logo icons";
   }
 
   .page-index-3 .forest-hero-slide {
