@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scent & Aura | Luxury Perfumery</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS (Compiled from SCSS) -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/vendor/swiper/swiper-bundle.min.css" />
+</head>
+
+<body class="page-index-3">
+
+    <!-- Navbar -->
+    <nav class="navbar-custom navbar-forest" id="navbar">
+        <div class="container">
+            <div class="nav-forest-inner">
+                <a href="index.html" class="logo nav-forest-logo">
+                    <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
+                </a>
+
+                <div class="nav-links nav-forest-links">
+                    <div class="nav-item-has-dropdown">
+                        <a href="index.html">Home <i data-lucide="chevron-down" width="12"></i></a>
+                        <div class="nav-dropdown">
+                            <a href="index.html">Home Page One</a>
+                            <a href="index-2.html">Home Page Two</a>
+                            <a href="index-3.html">Home Page Three</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-has-dropdown">
+                        <a href="#shop">Shop <i data-lucide="chevron-down" width="12"></i></a>
+                        <div class="nav-dropdown">
+                            <a href="#shop">New Arrivals</a>
+                            <a href="#shop">Best Sellers</a>
+                            <a href="#categories">Collections</a>
+                            <a href="#categories">Fragrance Finder</a>
+                        </div>
+                    </div>
+                    <a href="about-us.html">About Us</a>
+                    <a href="#contact">Contact</a>
+                    <div class="nav-item-has-dropdown">
+                        <a href="#blog">Blog <i data-lucide="chevron-down" width="12"></i></a>
+                        <div class="nav-dropdown">
+                            <a href="blog-details.html">Blog Details</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-has-dropdown">
+                        <a href="#">All Pages <i data-lucide="chevron-down" width="12"></i></a>
+                        <div class="nav-dropdown">
+                            <a href="shop.html">Shop</a>
+                            <a href="cart.html">Cart</a>
+                            <a href="checkout.html">Checkout</a>
+                            <a href="faq.html">FAQ</a>
+                            <a href="newsletter.html">Newsletter</a>
+                            <a href="payment-policy.html">Payment Policy</a>
+                            <a href="terms-conditions.html">Terms & Conditions</a>
+                            <a href="coming-soon.html">Coming Soon</a>
+                            <a href="maintenance.html">Maintenance</a>
+                            <a href="404.html">404</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-icons nav-forest-icons">
+                    <button title="Search"><i data-lucide="search" width="20"></i></button>
+                    <button title="Account"><i data-lucide="user" width="20"></i></button>
+                    <button class="position-relative" title="Wishlist">
+                        <i data-lucide="heart" width="20"></i>
+                        <span class="cart-badge">0</span>
+                    </button>
+                    <button class="position-relative" title="Cart">
+                        <i data-lucide="shopping-bag" width="20"></i>
+                        <span class="cart-badge">0</span>
+                    </button>
+                    <button class="d-lg-none" title="Menu"><i data-lucide="menu" width="22"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="forest-hero hero-slider swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="forest-hero-slide" style="--hero-accent: #a7c8a0; --hero-mist: #dcead7; --hero-ink: #0b2f24;">
+                    <div class="forest-hero-pattern"></div>
+                    <div class="forest-orb orb-1"></div>
+                    <div class="forest-orb orb-2"></div>
+                    <div class="forest-orb orb-3"></div>
+                    <div class="container">
+                        <div class="row align-items-center g-5">
+                            <div class="col-lg-6">
+                                <p class="hero-eyebrow text-uppercase small fw-bold tracking-ultra reveal"
+                                    data-swiper-parallax="-200">Esmina Atelier</p>
+                                <h1 class="hero-title reveal" data-swiper-parallax="-300">Sense with unforgettable
+                                    fragrances</h1>
+                                <p class="hero-copy text-gray-500 reveal" data-swiper-parallax="-200">
+                                    A curated garden of French oils, layered with botanical depth and slow-burning
+                                    elegance.
+                                </p>
+                                <div class="hero-actions reveal" data-swiper-parallax="-150">
+                                    <a href="#shop" class="btn btn--primary">Shop Collection</a>
+                                    <a href="#categories" class="btn btn--secondary">Find Your Notes</a>
+                                </div>
+                                <div class="hero-stats reveal" data-swiper-parallax="-100">
+                                    <div class="hero-stat">
+                                        <span class="stat-value">28</span>
+                                        <span class="stat-label">Botanical blends</span>
+                                    </div>
+                                    <div class="hero-stat">
+                                        <span class="stat-value">60+</span>
+                                        <span class="stat-label">Scent profiles</span>
+                                    </div>
+                                    <div class="hero-stat">
+                                        <span class="stat-value">12</span>
+                                        <span class="stat-label">Ateliers worldwide</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="hero-bottle-wrap reveal" data-swiper-parallax="-200">
+                                    <div class="hero-bottle-ring"></div>
+                                    <img src="./assets/images/perfume-bottle-no-bg-new.png" alt="Signature bottle"
+                                        class="hero-bottle">
+                                    <div class="hero-stamp">
+                                        <span>Limited</span>
+                                        <strong>Edition</strong>
+                                    </div>
+                                    <div class="hero-floating-card card-top">
+                                        <span class="card-title">Top Notes</span>
+                                        <span class="card-value">Fig, Iris, Bergamot</span>
+                                    </div>
+                                    <div class="hero-floating-card card-bottom">
+                                        <span class="card-title">Base Notes</span>
+                                        <span class="card-value">Cedar, Amber, Tonka</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="forest-hero-slide" style="--hero-accent: #bfd6b0; --hero-mist: #eef4e9; --hero-ink: #0b2f24;">
+                    <div class="forest-hero-pattern"></div>
+                    <div class="forest-orb orb-1"></div>
+                    <div class="forest-orb orb-2"></div>
+                    <div class="forest-orb orb-3"></div>
+                    <div class="container">
+                        <div class="row align-items-center g-5">
+                            <div class="col-lg-6">
+                                <p class="hero-eyebrow text-uppercase small fw-bold tracking-ultra reveal"
+                                    data-swiper-parallax="-200">New Collection</p>
+                                <h1 class="hero-title reveal" data-swiper-parallax="-300">New perfume collection</h1>
+                                <p class="hero-copy text-gray-500 reveal" data-swiper-parallax="-200">
+                                    Soft woods, crisp citrus, and mineral musk crafted for luminous evenings.
+                                </p>
+                                <div class="hero-actions reveal" data-swiper-parallax="-150">
+                                    <a href="#shop" class="btn btn--primary">Explore the Drop</a>
+                                    <a href="#blog" class="btn btn--secondary">Read the Journal</a>
+                                </div>
+                                <div class="hero-stats reveal" data-swiper-parallax="-100">
+                                    <div class="hero-stat">
+                                        <span class="stat-value">24H</span>
+                                        <span class="stat-label">Long wear</span>
+                                    </div>
+                                    <div class="hero-stat">
+                                        <span class="stat-value">Vegan</span>
+                                        <span class="stat-label">Clean formula</span>
+                                    </div>
+                                    <div class="hero-stat">
+                                        <span class="stat-value">3</span>
+                                        <span class="stat-label">Limited scents</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="hero-bottle-wrap reveal" data-swiper-parallax="-200">
+                                    <div class="hero-bottle-ring"></div>
+                                    <img src="./assets/images/hero_azure.png" alt="Azure bottle" class="hero-bottle">
+                                    <div class="hero-stamp">
+                                        <span>Fresh</span>
+                                        <strong>Drop</strong>
+                                    </div>
+                                    <div class="hero-floating-card card-top">
+                                        <span class="card-title">Middle Notes</span>
+                                        <span class="card-value">Jasmine, Cedarwood</span>
+                                    </div>
+                                    <div class="hero-floating-card card-bottom">
+                                        <span class="card-title">Finish</span>
+                                        <span class="card-value">White Musk, Vetiver</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </header>
+
+    <!-- Marquee -->
+    <section class="forest-marquee">
+        <div class="marquee-track">
+            <span>Free shipping on orders over $150</span>
+            <span class="marquee-dot"></span>
+            <span>Complimentary samples with every purchase</span>
+            <span class="marquee-dot"></span>
+            <span>Limited edition green rituals available now</span>
+            <span class="marquee-dot"></span>
+            <span>Free shipping on orders over $150</span>
+            <span class="marquee-dot"></span>
+            <span>Complimentary samples with every purchase</span>
+            <span class="marquee-dot"></span>
+            <span>Limited edition green rituals available now</span>
+            <span class="marquee-dot"></span>
+        </div>
+    </section>
+
+    <!-- Mosaic -->
+    <section class="forest-mosaic py-section">
+        <div class="container">
+            <div class="mosaic-intro text-center reveal">
+                <span class="section-subtitle">Perfume Esmina</span>
+                <h2 class="section-title">Crafted for unforgettable rituals</h2>
+                <p class="text-gray-500">Layer clean botanicals with luminous woods, bottled for quiet ceremony and bold
+                    expression.</p>
+            </div>
+
+            <div class="mosaic-grid">
+                <article class="tile tile--hero reveal">
+                    <img src="./assets/images/hero_noir.png" alt="Velvet Noir">
+                    <div class="tile-overlay">
+                        <span class="tile-kicker">Best-selling must-haves</span>
+                        <h3 class="font-serif">Velvet Noir</h3>
+                        <a href="#shop" class="tile-link">See new arrivals <i data-lucide="arrow-up-right"
+                                width="14"></i></a>
+                    </div>
+                </article>
+                <article class="tile tile--type reveal">
+                    <span class="tile-kicker">Perfume Esmina</span>
+                    <h3 class="font-serif">Sculpted glass, botanical soul</h3>
+                    <p>Notes bloom in green light, polished with a whisper of gold.</p>
+                    <div class="tile-stamp">Est. 1985</div>
+                </article>
+                <article class="tile tile--bottle reveal">
+                    <img src="./assets/images/product-2.png" alt="Emerald bottle">
+                </article>
+                <article class="tile tile--story reveal">
+                    <span class="tile-kicker">Studio favorites</span>
+                    <h4 class="font-serif">Best-selling must-haves</h4>
+                    <p>Slow-steeped oils for the skin, brightened by crisp herbs.</p>
+                </article>
+                <article class="tile tile--portrait reveal">
+                    <img src="./assets/images/perfumer.png" alt="Master perfumer">
+                    <div class="tile-overlay soft">
+                        <span class="tile-kicker">Master perfumer</span>
+                        <h4 class="font-serif">Atelier blend</h4>
+                    </div>
+                </article>
+                <article class="tile tile--small reveal">
+                    <img src="./assets/images/product-1.jpg" alt="Miniature perfumes">
+                </article>
+                <article class="tile tile--pair reveal">
+                    <div class="tile-pair">
+                        <div>
+                            <img src="./assets/images/product-3.png" alt="Citrus blend">
+                        </div>
+                        <div>
+                            <img src="./assets/images/product-2.png" alt="Woody blend">
+                        </div>
+                    </div>
+                    <div class="tile-overlay">
+                        <span class="tile-kicker">Travel sizes</span>
+                        <h4 class="font-serif">Layer your ritual</h4>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fragrance Families -->
+    <section class="forest-families py-section" id="categories">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 reveal">
+                    <span class="section-subtitle">Fragrance Families</span>
+                    <h2 class="section-title">Find your signature mood</h2>
+                </div>
+                <div class="col-lg-6 reveal">
+                    <p class="text-gray-500">Discover layered profiles crafted for bright mornings, smoky evenings, and
+                        every ritual in between.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-lg-3">
+                    <div class="family-card reveal">
+                        <div class="family-icon"><i data-lucide="leaf" width="22"></i></div>
+                        <h6>Fruit Fragrance</h6>
+                        <p>Juicy pear, fig, and bergamot for luminous days.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="family-card reveal">
+                        <div class="family-icon"><i data-lucide="flower-2" width="22"></i></div>
+                        <h6>Flower Fragrance</h6>
+                        <p>Velvet petals, white tea, and soft powdery trails.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="family-card reveal">
+                        <div class="family-icon"><i data-lucide="flame" width="22"></i></div>
+                        <h6>Spice Fragrance</h6>
+                        <p>Warming cardamom, clove, and ambered woods.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="family-card reveal">
+                        <div class="family-icon"><i data-lucide="sun" width="22"></i></div>
+                        <h6>Citrus Fragrance</h6>
+                        <p>Bright citrus peel with a mineral, clean finish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section class="forest-best py-section" id="shop">
+        <div class="container">
+            <div class="row align-items-end mb-5">
+                <div class="col-lg-6 reveal">
+                    <span class="section-subtitle">Best-selling must-haves</span>
+                    <h2 class="section-title">Curated scents for day and night</h2>
+                </div>
+                <div class="col-lg-6 reveal">
+                    <p class="text-gray-500">Designed for layering, each blend evolves over time with soft botanical
+                        depth.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="forest-product-card card-3d reveal">
+                        <div class="card-3d-wrapper">
+                            <span class="product-tag">New</span>
+                            <img src="./assets/images/product-2.png" alt="Verdant Bloom" class="product-image">
+                            <h5 class="font-serif">Verdant Bloom</h5>
+                            <p class="text-gray-500 small">Green tea, fig leaf, clean musk.</p>
+                            <div class="product-footer">
+                                <span class="price">$120</span>
+                                <button class="btn btn--primary">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="forest-product-card card-3d reveal">
+                        <div class="card-3d-wrapper">
+                            <span class="product-tag">Bestseller</span>
+                            <img src="./assets/images/product-3.png" alt="Golden Hour" class="product-image">
+                            <h5 class="font-serif">Golden Hour</h5>
+                            <p class="text-gray-500 small">Citrus peel, soft resin, warm cedar.</p>
+                            <div class="product-footer">
+                                <span class="price">$138</span>
+                                <button class="btn btn--primary">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="forest-product-card card-3d reveal">
+                        <div class="card-3d-wrapper">
+                            <span class="product-tag">Limited</span>
+                            <img src="./assets/images/product-1.jpg" alt="Cedar Whisper" class="product-image">
+                            <h5 class="font-serif">Cedar Whisper</h5>
+                            <p class="text-gray-500 small">Saffron, rosewater, smoky woods.</p>
+                            <div class="product-footer">
+                                <span class="price">$152</span>
+                                <button class="btn btn--primary">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Collection -->
+    <section class="forest-collection py-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 reveal">
+                    <span class="section-subtitle">New Perfume Collection</span>
+                    <h2 class="collection-title font-serif">New perfume collection</h2>
+                    <p class="text-gray-500">A soft green composition, wrapped in citrus light and grounded by mineral
+                        woods. Designed for bold layering.</p>
+                    <a href="#shop" class="btn btn--secondary">Discover new scents</a>
+                </div>
+                <div class="col-lg-6 reveal">
+                    <div class="collection-collage">
+                        <img src="./assets/images/perfume-lab.png" alt="Atelier lab" class="collage-img one">
+                        <img src="./assets/images/hero.png" alt="Signature bottle" class="collage-img two">
+                        <img src="./assets/images/insta3.png" alt="Scent ritual" class="collage-img three">
+                        <div class="collage-tag">Limited drop</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journal -->
+    <section class="forest-journal py-section" id="blog">
+        <div class="container">
+            <div class="row align-items-end mb-5">
+                <div class="col-lg-6 reveal">
+                    <span class="section-subtitle">The Journal</span>
+                    <h2 class="section-title">Stories from the scent studio</h2>
+                </div>
+                <div class="col-lg-6 reveal">
+                    <p class="text-gray-500">Explore slow perfumery, layering rituals, and behind-the-scenes atelier
+                        notes.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <article class="journal-card reveal">
+                        <img src="./assets/images/insta1.png" alt="Green ritual">
+                        <div class="journal-body">
+                            <span class="journal-tag">Studio Notes</span>
+                            <h5 class="font-serif">Layering green oils for daytime glow</h5>
+                            <p class="text-gray-500 small">Combine citrus top notes with soft woods for luminous depth.</p>
+                            <a href="blog-details.html" class="journal-link">Read story <i
+                                    data-lucide="arrow-up-right" width="14"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="journal-card reveal">
+                        <img src="./assets/images/insta2.png" alt="Atelier craft">
+                        <div class="journal-body">
+                            <span class="journal-tag">Atelier</span>
+                            <h5 class="font-serif">The art of quiet perfumery</h5>
+                            <p class="text-gray-500 small">A look inside the blending process and slow maceration.</p>
+                            <a href="blog-details.html" class="journal-link">Read story <i
+                                    data-lucide="arrow-up-right" width="14"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="journal-card reveal">
+                        <img src="./assets/images/insta4.png" alt="Scent ritual">
+                        <div class="journal-body">
+                            <span class="journal-tag">Ritual</span>
+                            <h5 class="font-serif">Evening scents for slow nights</h5>
+                            <p class="text-gray-500 small">Warm resins and velvety florals for after-dark rituals.</p>
+                            <a href="blog-details.html" class="journal-link">Read story <i
+                                    data-lucide="arrow-up-right" width="14"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="forest-contact py-section" id="contact">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 reveal">
+                    <span class="section-subtitle">Visit our atelier</span>
+                    <h2 class="section-title">Find us in the heart of the city</h2>
+                    <p class="text-gray-500">A calm boutique surrounded by gardens, curated for slow discovery and
+                        personal scent consultations.</p>
+                    <div class="d-flex flex-column gap-3 mt-4">
+                        <div class="contact-card">
+                            <i data-lucide="map-pin" width="20"></i>
+                            <div>
+                                <h6 class="mb-1">Scent & Aura Atelier</h6>
+                                <p class="mb-0 text-gray-500 small">1234 Fashion Street, Suite 567, New York, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <i data-lucide="phone" width="20"></i>
+                            <div>
+                                <h6 class="mb-1">Concierge</h6>
+                                <p class="mb-0 text-gray-500 small">(212) 555-1234</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <i data-lucide="mail" width="20"></i>
+                            <div>
+                                <h6 class="mb-1">Email</h6>
+                                <p class="mb-0 text-gray-500 small">hello@scentandaura.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="stores.html" class="btn btn--secondary">Explore Stores</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal">
+                    <div class="contact-image-wrap">
+                        <img src="./assets/images/store.png" alt="Store map">
+                        <div class="contact-mini-card">Open daily 10am - 8pm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="py-section bg-white text-center pb-0">
+        <div class="container mb-section reveal">
+            <span class="text-secondary text-uppercase tracking-ultra small fw-bold">Social Journal</span>
+            <h2 class="display-4 text-secondary-dark mt-3 mb-2 font-serif">@ScentAndAura</h2>
+            <a href="#"
+                class="text-gray-500 hover:text-primary text-decoration-underline small tracking-widest-custom">Follow
+                Us</a>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="row g-0">
+                <div class="col-6 col-md-3">
+                    <div class="insta-item">
+                        <img src="./assets/images/insta1.png" alt="Instagram">
+                        <div class="overlay">
+                            <i data-lucide="instagram" width="24" class="text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="insta-item">
+                        <img src="./assets/images/insta2.png" alt="Instagram">
+                        <div class="overlay">
+                            <i data-lucide="instagram" width="24" class="text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="insta-item">
+                        <img src="./assets/images/insta3.png" alt="Instagram">
+                        <div class="overlay">
+                            <i data-lucide="instagram" width="24" class="text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="insta-item">
+                        <img src="./assets/images/insta4.png" alt="Instagram">
+                        <div class="overlay">
+                            <i data-lucide="instagram" width="24" class="text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-white border-secondary" style="padding-top: 80px;">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="mb-4 d-block">
+                        <img src="./assets/images/logo.svg" alt="Scent & Aura" height="28">
+                    </a>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0 text-gray-400 small fw-light">
+                            Address: 1234 Fashion Street, Suite 567,<br> New York, NY 10001
+                        </p>
+                        <p class="mb-0 text-gray-400 small fw-light">
+                            Email: <a href="mailto:info@fashionshop.com"
+                                class="text-gray-400 hover:text-primary">info@fashionshop.com</a>
+                        </p>
+                        <p class="mb-0 text-gray-400 small fw-light">
+                            Phone: <span class="text-primary">(212) 555-1234</span>
+                        </p>
+                        <a href="#"
+                            class="text-primary small text-decoration-underline mt-1 d-inline-flex align-items-center gap-1 hover:text-white transition-colors">
+                            Get direction <i data-lucide="arrow-up-right" width="14"></i>
+                        </a>
+
+                        <div class="d-flex gap-2 mt-3">
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="facebook" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="twitter" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="instagram" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="music-2" width="16"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i data-lucide="pin" width="16"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Help -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">Help</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Returns + Exchanges</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Shipping</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">FAQ's</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Compare</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">My Wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- About Us -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">About us</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-gray-400 small fw-light">
+                        <li><a href="#" class="hover:text-primary transition-colors">Our Story</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Visit Our Store</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Account</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-primary mb-4 fs-6 font-serif">Sign Up for Email</h5>
+                    <p class="text-gray-400 small mb-4 fw-light">
+                        Sign up to get first dibs on new arrivals, sales, exclusive content, events and more!
+                    </p>
+                    <form class="mb-4 footer-newsletter-form">
+                        <input type="email" class="form-control" placeholder="Enter your email..."
+                            aria-label="Enter your email">
+                        <button class="btn-subscribe" type="submit">
+                            Subscribe <i data-lucide="arrow-up-right" width="14" class="ms-2"></i>
+                        </button>
+                    </form>
+
+                    <div class="d-flex gap-4">
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 border-0 small d-flex align-items-center gap-1"
+                                type="button" data-bs-toggle="dropdown">
+                                USD
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">GBP</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 border-0 small d-flex align-items-center gap-1"
+                                type="button" data-bs-toggle="dropdown">
+                                English
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Francais</a></li>
+                                <li><a class="dropdown-item" href="#">Espanol</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0">&copy; 2026 Scent & Aura. All Rights Reserved</p>
+                <div class="d-flex gap-2">
+                    <img src="./assets/images/payment.png" alt="Payment Methods" width="300">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Lucide Icons -->
+    <script src="./assets/vendor/lucide/lucide.js"></script>
+    <!-- Swiper JS -->
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Main Script -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
