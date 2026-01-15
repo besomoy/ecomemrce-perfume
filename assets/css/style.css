@@ -719,7 +719,7 @@ footer.bg-footer::before, footer.bg-footer::after {
 
 .product-card {
   background: white;
-  border-radius: 3rem;
+  border-radius: 0;
   padding: 2.5rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   transition: all 0.7s;
@@ -731,7 +731,7 @@ footer.bg-footer::before, footer.bg-footer::after {
   position: relative;
   height: 400px;
   margin-bottom: 2.5rem;
-  border-radius: 2rem;
+  border-radius: 0;
   overflow: hidden;
 }
 .product-card .img-wrapper img {
@@ -940,7 +940,7 @@ footer.bg-footer::before, footer.bg-footer::after {
 
 .sc-product-card {
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 0;
   overflow: hidden;
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
@@ -963,7 +963,7 @@ footer.bg-footer::before, footer.bg-footer::after {
   width: 35px;
   height: 35px;
   background: #ffffff;
-  border-radius: 0;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2629,7 +2629,7 @@ footer.bg-footer::before, footer.bg-footer::after {
 .page-index-3 .forest-product-card {
   position: relative;
   background: #ffffff;
-  border-radius: 28px;
+  border-radius: 0;
   padding: 28px;
   border: 1px solid rgba(11, 47, 36, 0.08);
   box-shadow: 0 24px 45px -32px var(--forest-shadow);

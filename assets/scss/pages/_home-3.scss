@@ -567,7 +567,7 @@
 .page-index-3 .forest-product-card {
   position: relative;
   background: #ffffff;
-  border-radius: 28px;
+  border-radius: 0;
   padding: 28px;
   border: 1px solid rgba(11, 47, 36, 0.08);
   box-shadow: 0 24px 45px -32px var(--forest-shadow);
@@ -777,37 +777,49 @@
 }
 
 @keyframes drift {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-12px);
   }
 }
 
 @keyframes floatSlow {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-14px);
   }
 }
 
 @keyframes floatReverse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(12px);
   }
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.6;
   }
+
   50% {
     transform: scale(1.05);
     opacity: 1;
@@ -818,6 +830,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }

@@ -137,7 +137,7 @@ productCards.forEach(card => {
                 const price = btn.getAttribute('data-price');
                 const priceEl = card.querySelector('.price-wrapper .price');
                 if (price && priceEl) {
-                    priceEl.innerText = price + '৳';
+                    priceEl.innerText = '$' + price;
                 }
 
                 // Enable Add to Cart button
