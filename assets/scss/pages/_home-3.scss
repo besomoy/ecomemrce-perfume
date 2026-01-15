@@ -26,8 +26,8 @@
 
 .page-index-3 .navbar-forest .nav-forest-inner {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-areas: "links logo icons";
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "logo links icons";
   align-items: center;
   gap: 24px;
   background: rgba(247, 244, 236, 0.82);
@@ -40,7 +40,7 @@
 
 .page-index-3 .navbar-forest .nav-forest-logo {
   grid-area: logo;
-  justify-self: center;
+  justify-self: start;
 }
 
 .page-index-3 .navbar-forest .nav-forest-icons {
@@ -50,7 +50,7 @@
 
 .page-index-3 .navbar-forest .nav-links {
   grid-area: links;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 28px;
   flex-wrap: wrap;
 }
