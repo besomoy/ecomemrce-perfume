@@ -1,0 +1,10 @@
+.home-three {
+    .home-three__newsletter-cta {
+        @extend .btn;
+        @extend .btn--ghost;
+        @extend .btn--sm;
+        border-bottom: 1px solid $primary;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

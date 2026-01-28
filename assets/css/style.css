@@ -180,7 +180,7 @@ a {
   transform: translateY(0);
 }
 
-.btn {
+.btn, .home-three .home-three__newsletter-cta, .home-two .home-two__campaign-cta, .home-one .home-one__hero-cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -198,32 +198,66 @@ a {
   overflow: hidden;
   border-radius: 0;
 }
-.btn:hover {
+.btn:hover, .home-three .home-three__newsletter-cta:hover, .home-two .home-two__campaign-cta:hover, .home-one .home-one__hero-cta:hover {
   transform: translateY(-2px);
   text-decoration: none;
 }
-.btn:active {
+.btn:active, .home-three .home-three__newsletter-cta:active, .home-two .home-two__campaign-cta:active, .home-one .home-one__hero-cta:active {
   transform: translateY(0);
 }
 
-.btn--primary {
+.btn--primary, .home-one .home-one__hero-cta {
   background-color: #C7A243;
   color: #052b21;
+  border-color: transparent;
 }
-.btn--primary:hover {
+.btn--primary:hover, .home-one .home-one__hero-cta:hover {
   background-color: #ffffff;
   color: #052b21;
   box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.5);
 }
 
 .btn--secondary {
-  border-color: #052b21;
+  background-color: transparent;
   color: #052b21;
+  border-color: #052b21;
 }
 .btn--secondary:hover {
   background-color: #052b21;
   color: #ffffff;
   box-shadow: 0 10px 25px -5px rgba(5, 43, 33, 0.4);
+}
+
+.btn--outline, .home-two .home-two__campaign-cta {
+  background-color: transparent;
+  color: #C7A243;
+  border-color: #C7A243;
+}
+.btn--outline:hover, .home-two .home-two__campaign-cta:hover {
+  background-color: #C7A243;
+  color: #ffffff;
+  box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.5);
+}
+
+.btn--ghost, .home-three .home-three__newsletter-cta {
+  background-color: transparent;
+  color: #052b21;
+  border-color: transparent;
+}
+.btn--ghost:hover, .home-three .home-three__newsletter-cta:hover {
+  background-color: rgba(5, 43, 33, 0.08);
+  color: #052b21;
+}
+
+.btn--danger {
+  background-color: #b42318;
+  color: #ffffff;
+  border-color: #b42318;
+}
+.btn--danger:hover {
+  background-color: #7a271a;
+  color: #ffffff;
+  box-shadow: 0 10px 25px -5px rgba(180, 35, 24, 0.35);
 }
 
 .btn--text {
@@ -235,6 +269,45 @@ a {
   transform: translateY(0);
   border-bottom-color: #C7A243;
   color: #C7A243;
+}
+
+.btn--sm, .home-three .home-three__newsletter-cta {
+  padding: 0.65rem 1.4rem;
+  font-size: 0.72rem;
+}
+
+.btn--md, .home-two .home-two__campaign-cta {
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+}
+
+.btn--lg, .home-one .home-one__hero-cta {
+  padding: 1.2rem 2.6rem;
+  font-size: 0.9rem;
+}
+
+.btn.is-disabled, .home-three .is-disabled.home-three__newsletter-cta, .home-two .is-disabled.home-two__campaign-cta, .home-one .is-disabled.home-one__hero-cta,
+.btn.is-disabled:hover,
+.btn.is-disabled:active,
+.btn[disabled],
+.home-three [disabled].home-three__newsletter-cta,
+.home-two [disabled].home-two__campaign-cta,
+.home-one [disabled].home-one__hero-cta,
+.btn[aria-disabled=true],
+.home-three [aria-disabled=true].home-three__newsletter-cta,
+.home-two [aria-disabled=true].home-two__campaign-cta,
+.home-one [aria-disabled=true].home-one__hero-cta {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn.is-loading, .home-three .is-loading.home-three__newsletter-cta, .home-two .is-loading.home-two__campaign-cta, .home-one .is-loading.home-one__hero-cta {
+  opacity: 0.75;
+  cursor: progress;
+  pointer-events: none;
 }
 
 /* Navbar */
@@ -1172,6 +1245,12 @@ footer.bg-footer::before, footer.bg-footer::after {
   opacity: 1;
 }
 
+.home-one .home-one__hero-cta {
+  letter-spacing: 0.28em;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+}
+
 .page-index-2 {
   background-color: #072a23;
   color: #f4f1ea;
@@ -2058,6 +2137,12 @@ footer.bg-footer::before, footer.bg-footer::after {
 }
 .page-index-2 .reveal-text {
   display: block;
+}
+
+.home-two .home-two__campaign-cta {
+  border-radius: 999px;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 }
 
 .page-index-3 {
@@ -2999,6 +3084,12 @@ footer.bg-footer::before, footer.bg-footer::after {
     grid-row: auto;
   }
 }
+.home-three .home-three__newsletter-cta {
+  border-bottom: 1px solid #C7A243;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .about-section {
   padding: 100px 0;
 }

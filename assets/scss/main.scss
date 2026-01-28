@@ -1,13 +1,18 @@
-@import 'components/variables';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
 @import 'components/base';
-@import 'components/btn';
+@import 'components/buttons';
 @import 'components/layout';
 @import 'components/page-header';
 @import 'components/components';
 
 @import 'pages/home';
+@import 'pages/home-one';
 @import 'pages/home-2';
+@import 'pages/home-two';
 @import 'pages/home-3';
+@import 'pages/home-three';
 @import 'pages/about';
 @import 'pages/shop';
 @import 'pages/product-details';

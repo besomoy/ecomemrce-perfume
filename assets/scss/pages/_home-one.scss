@@ -1,0 +1,10 @@
+.home-one {
+    .home-one__hero-cta {
+        @extend .btn;
+        @extend .btn--primary;
+        @extend .btn--lg;
+        letter-spacing: 0.28em;
+        padding-left: 2.8rem;
+        padding-right: 2.8rem;
+    }
+}

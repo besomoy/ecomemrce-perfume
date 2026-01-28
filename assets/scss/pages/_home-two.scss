@@ -1,0 +1,10 @@
+.home-two {
+    .home-two__campaign-cta {
+        @extend .btn;
+        @extend .btn--outline;
+        @extend .btn--md;
+        border-radius: 999px;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+}

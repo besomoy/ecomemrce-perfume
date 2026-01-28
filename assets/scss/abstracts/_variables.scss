@@ -1,0 +1,57 @@
+// Typography
+$font-serif: 'Playfair Display', serif;
+$font-sans: 'Lato', sans-serif;
+
+// Brand Colors
+$primary: #C7A243; // Authenticated Logo Gold
+$primary-alt: #e2c076;
+$primary-light: #f6e6b4;
+
+$secondary: #083c2f;
+$secondary-dark: #052b21;
+$secondary-deep: #072a23;
+
+// Neutral & Surface Palette
+$neutral-100: #ffffff;
+$neutral-200: #faf9f6;
+$neutral-300: #f4f1ea;
+$neutral-400: #8f8f8f;
+$neutral-700: #1a1a1a;
+$neutral-800: #051411;
+$neutral-900: #04100d;
+
+// Semantic Aliases
+$bg-main: $neutral-200;
+$bg-surface: $neutral-300;
+$bg-footer: $neutral-900;
+$text-main: $neutral-700;
+$text-muted: $neutral-400;
+
+// Legacy Aliases
+$luxury-gold: $primary;
+$luxury-green: $secondary;
+$luxury-dark-green: $secondary-dark;
+$luxury-black: $neutral-700;
+$bg-light: $neutral-200;
+
+// Button System
+$btn-font-size-sm: 0.72rem;
+$btn-font-size-md: 0.8rem;
+$btn-font-size-lg: 0.9rem;
+
+$btn-padding-sm: 0.65rem 1.4rem;
+$btn-padding-md: 1rem 2rem;
+$btn-padding-lg: 1.2rem 2.6rem;
+
+$btn-border-radius: 0;
+$btn-letter-spacing: 0.2em;
+$btn-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+$btn-shadow-primary-hover: 0 10px 25px -5px rgba(212, 175, 55, 0.5);
+$btn-shadow-secondary-hover: 0 10px 25px -5px rgba(5, 43, 33, 0.4);
+$btn-shadow-danger-hover: 0 10px 25px -5px rgba(180, 35, 24, 0.35);
+
+// Semantic Status Colors
+$danger: #b42318;
+$danger-dark: #7a271a;
+$danger-light: #fef3f2;

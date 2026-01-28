@@ -1,0 +1,45 @@
+@mixin btn-base {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: $btn-padding-md;
+    font-size: $btn-font-size-md;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: $btn-letter-spacing;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: transparent;
+    transition: $btn-transition;
+    position: relative;
+    overflow: hidden;
+    border-radius: $btn-border-radius;
+}
+
+@mixin btn-size($padding, $font-size) {
+    padding: $padding;
+    font-size: $font-size;
+}
+
+@mixin btn-variant(
+    $bg,
+    $color,
+    $border: transparent,
+    $hover-bg: null,
+    $hover-color: null,
+    $hover-shadow: null
+) {
+    background-color: $bg;
+    color: $color;
+    border-color: $border;
+
+    &:hover {
+        background-color: if($hover-bg != null, $hover-bg, $bg);
+        color: if($hover-color != null, $hover-color, $color);
+
+        @if $hover-shadow != null {
+            box-shadow: $hover-shadow;
+        }
+    }
+}

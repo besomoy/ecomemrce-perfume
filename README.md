@@ -34,11 +34,11 @@ The following external libraries were downloaded locally:
 -   Node.js & npm (for Sass compilation)
 
 ### Styling (SCSS)
-External CSS logic is written using SCSS in `assets/scss/style.scss`.
+External CSS logic is written using SCSS in `assets/scss/main.scss`.
 To compile the SCSS to CSS, run:
 
 ```bash
-npx sass assets/scss/style.scss assets/css/style.css
+npx sass assets/scss/main.scss assets/css/style.css
 ```
 
 (The `sass` package is installed as a dev dependency).
