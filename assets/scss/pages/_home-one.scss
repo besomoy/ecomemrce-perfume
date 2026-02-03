@@ -1,4 +1,11 @@
 .home-one {
+    $home-one-section-padding-y: 7.5rem;
+
+    .py-section {
+        padding-top: $home-one-section-padding-y;
+        padding-bottom: $home-one-section-padding-y;
+    }
+
     .home-one__hero-cta {
         @extend .btn;
         @extend .btn--primary;

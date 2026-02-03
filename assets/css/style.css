@@ -72,11 +72,15 @@ a {
 }
 
 .bg-luxury-dark-green {
-  color: #052b21 !important;
+  background-color: #052b21 !important;
 }
 
 .bg-cream-light {
   background-color: #faf9f6 !important;
+}
+
+.bg-secondary-dark {
+  background-color: #052b21 !important;
 }
 
 .text-gray-200 {
@@ -1245,6 +1249,10 @@ footer.bg-footer::before, footer.bg-footer::after {
   opacity: 1;
 }
 
+.home-one .py-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
 .home-one .home-one__hero-cta {
   letter-spacing: 0.28em;
   padding-left: 2.8rem;

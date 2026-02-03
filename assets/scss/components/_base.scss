@@ -88,11 +88,15 @@ a {
 }
 
 .bg-luxury-dark-green {
-    color: $secondary-dark !important;
+    background-color: $secondary-dark !important;
 }
 
 .bg-cream-light {
     background-color: $bg-main !important;
+}
+
+.bg-secondary-dark {
+    background-color: $secondary-dark !important;
 }
 
 // Neutral Grays
