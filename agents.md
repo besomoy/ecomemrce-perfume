@@ -162,6 +162,9 @@ AI MUST follow this logic:
 4. Is a page-specific button reused later?  
    → Promote it to a global variant
 
+5. Is the style inline?
+   → YES → ❌ **FORBIDDEN** (unless valid Bootstrap class) -> Move to SCSS.
+
 ---
 
 ## 7. HTML Usage Rules
