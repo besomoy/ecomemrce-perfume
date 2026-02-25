@@ -1,74 +1,78 @@
-.hero-slider {
-    width: 100%;
-    height: 100vh;
-}
-
-.hero-header {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    color: white;
-
-    .bg-overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to bottom, rgba(5, 17, 15, 0.7) 0%, rgba(5, 17, 15, 0.4) 50%, rgba(5, 17, 15, 0.8) 100%);
-        z-index: 10;
-        pointer-events: none;
-    }
-
-    .hero-bg-img {
-        position: absolute;
-        inset: 0;
+#hero {
+    &.hero-slider {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 0;
+        height: 100vh;
     }
 
-    .hero-content {
+    .hero-header {
         position: relative;
-        z-index: 20;
-        text-align: center;
-        padding: 0 1rem;
-    }
-}
-
-.insta-item {
-    position: relative;
-    overflow: hidden;
-    height: 400px;
-    cursor: pointer;
-
-    img {
-        width: 100%;
         height: 100%;
-        object-fit: cover;
-        transition: transform 0.7s ease;
-    }
-
-    .overlay {
-        position: absolute;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        opacity: 0;
-        transition: opacity 0.5s;
-    }
+        overflow: hidden;
+        color: white;
 
-    &:hover {
+        .bg-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(5, 17, 15, 0.7) 0%, rgba(5, 17, 15, 0.4) 50%, rgba(5, 17, 15, 0.8) 100%);
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .hero-bg-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 20;
+            text-align: center;
+            padding: 0 1rem;
+        }
+    }
+}
+
+#instagram-feed {
+    .insta-item {
+        position: relative;
+        overflow: hidden;
+        height: 400px;
+        cursor: pointer;
+
         img {
-            transform: scale(1.1);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s ease;
         }
 
         .overlay {
-            opacity: 1;
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+
+            .overlay {
+                opacity: 1;
+            }
         }
     }
 }

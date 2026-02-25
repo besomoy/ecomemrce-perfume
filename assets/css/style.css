@@ -1183,12 +1183,11 @@ footer.bg-footer::before, footer.bg-footer::after {
   }
 }
 
-.hero-slider {
+#hero.hero-slider {
   width: 100%;
   height: 100vh;
 }
-
-.hero-header {
+#hero .hero-header {
   position: relative;
   height: 100%;
   width: 100%;
@@ -1198,14 +1197,14 @@ footer.bg-footer::before, footer.bg-footer::after {
   overflow: hidden;
   color: white;
 }
-.hero-header .bg-overlay {
+#hero .hero-header .bg-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom, rgba(5, 17, 15, 0.7) 0%, rgba(5, 17, 15, 0.4) 50%, rgba(5, 17, 15, 0.8) 100%);
   z-index: 10;
   pointer-events: none;
 }
-.hero-header .hero-bg-img {
+#hero .hero-header .hero-bg-img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -1213,26 +1212,26 @@ footer.bg-footer::before, footer.bg-footer::after {
   object-fit: cover;
   z-index: 0;
 }
-.hero-header .hero-content {
+#hero .hero-header .hero-content {
   position: relative;
   z-index: 20;
   text-align: center;
   padding: 0 1rem;
 }
 
-.insta-item {
+#instagram-feed .insta-item {
   position: relative;
   overflow: hidden;
   height: 400px;
   cursor: pointer;
 }
-.insta-item img {
+#instagram-feed .insta-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.7s ease;
 }
-.insta-item .overlay {
+#instagram-feed .insta-item .overlay {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.3);
@@ -1242,10 +1241,10 @@ footer.bg-footer::before, footer.bg-footer::after {
   opacity: 0;
   transition: opacity 0.5s;
 }
-.insta-item:hover img {
+#instagram-feed .insta-item:hover img {
   transform: scale(1.1);
 }
-.insta-item:hover .overlay {
+#instagram-feed .insta-item:hover .overlay {
   opacity: 1;
 }
 

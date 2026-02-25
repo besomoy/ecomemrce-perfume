@@ -144,6 +144,24 @@ All page styles MUST be scoped:
 }
 ```
 
+### 5.1 Section Targeting & ID Priority (New Convention)
+
+For every new section we work on:
+1. **First, create an ID** for the section (e.g., `<section id="hero-section">`).
+2. **All CSS for that section MUST be scoped under this ID** in SCSS. The ID should always be the **first priority** for targeting elements within the section.
+3. **Only create classes if necessary** (e.g., for reusable elements within the section that appear repeatedly, or if the global class doesn't suffice).
+
+Example:
+```scss
+#hero-section {
+  padding: 80px 0;
+
+  .hero-slider {
+    width: 100%;
+  }
+}
+```
+
 ---
 
 ## 6. Decision Rules (Mandatory Logic)
