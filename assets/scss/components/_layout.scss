@@ -178,20 +178,119 @@
     }
 }
 
-/* Footer */
-footer {
-    a:hover {
-        color: white !important;
+#site-footer {
+    background-color: $bg-footer;
+    color: $neutral-100;
+    border-top: 1px solid $secondary;
+    padding-top: 80px;
+
+    a {
+        transition: color 0.3s;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: $neutral-100;
+        }
     }
-}
 
-footer.bg-footer {
-    background-image: none !important;
-    position: relative;
-    border-top: none !important;
+    .footer-contact {
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
 
-    &::before,
-    &::after {
-        display: none !important;
+            p {
+                margin: 0;
+                color: $neutral-400;
+                font-size: 0.875rem;
+                font-weight: 300;
+            }
+
+            .email a {
+                color: $neutral-400;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            .phone span {
+                color: $primary;
+            }
+
+            .direction-link {
+                color: $primary;
+                font-size: 0.875rem;
+                text-decoration: underline;
+                margin-top: 0.25rem;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.25rem;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $neutral-100;
+                }
+            }
+
+            .footer-socials {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .footer-title {
+        color: $primary;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        font-family: $font-serif;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        li {
+            color: $neutral-400;
+            font-size: 0.875rem;
+            font-weight: 300;
+
+            a {
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .footer-newsletter {
+        .newsletter-desc {
+            color: $neutral-400;
+            font-size: 0.875rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .footer-dropdowns {
+            .btn-link {
+                color: $neutral-100;
+                text-decoration: none;
+                padding: 0;
+                border: none;
+                font-size: 0.875rem;
+                display: flex;
+                align-items: center;
+                gap: 0.25rem;
+
+                &::after {
+                    content: none;
+                }
+            }
+        }
     }
 }

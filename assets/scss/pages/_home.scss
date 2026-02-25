@@ -76,3 +76,327 @@
         }
     }
 }
+
+#signature-scent {
+    background-color: $secondary-dark;
+    color: white;
+    position: relative;
+    overflow: hidden;
+
+    .z-index-2 {
+        position: relative;
+        z-index: 2;
+    }
+
+    .image-wrapper {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-color: rgba(255, 255, 255, 0.1);
+        max-width: 500px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        aspect-ratio: 4/5;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    .content-wrapper {
+        .badge-wrapper {
+            background: rgba(199, 162, 67, 0.1);
+            border: 1px solid rgba(199, 162, 67, 0.3);
+
+            span {
+                color: $primary;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                font-size: 0.875rem;
+                font-weight: bold;
+            }
+        }
+
+        h2 {
+            line-height: 1;
+
+            span {
+                font-style: italic;
+                color: $primary;
+                padding-left: 3rem;
+            }
+        }
+
+        .description {
+            color: #d1d5db;
+            /* text-gray-300 */
+            font-size: 1.25rem;
+            font-weight: 300;
+            max-width: 600px;
+        }
+
+        .note-item {
+            .note-label {
+                font-size: 0.875rem;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                color: #6b7280;
+                /* text-gray-500 */
+                font-weight: bold;
+            }
+
+            .note-value {
+                font-size: 1.5rem;
+                font-family: $font-serif;
+            }
+        }
+
+        .price-action-wrapper {
+            .price {
+                font-family: $font-serif;
+                color: $primary;
+            }
+        }
+    }
+}
+
+#categories {
+    background-color: $neutral-300;
+
+    .categories-header {
+        margin-bottom: 6rem;
+
+        .subtitle {
+            color: $secondary;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.875rem;
+            font-weight: bold;
+        }
+
+        .title {
+            color: $secondary-dark;
+        }
+
+        .divider {
+            width: 80px;
+            height: 1px;
+            background-color: $primary;
+        }
+    }
+
+    .bg-floral {
+        background-color: #ffffff;
+    }
+
+    .bg-woody {
+        background-color: #eeeae3;
+    }
+
+    .bg-fresh {
+        background-color: #e3eef0;
+    }
+
+    .bg-oriental {
+        background-color: #f4ece0;
+    }
+
+    .card-text-3d {
+        h3 {
+            font-size: 2rem;
+            font-style: italic;
+            color: $secondary-dark;
+        }
+
+        p {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #6b7280;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+    }
+}
+
+#collections {
+    background-color: #ffffff;
+
+    .collections-header {
+        margin-bottom: 3rem;
+
+        .subtitle {
+            color: $secondary;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.875rem;
+            font-weight: bold;
+        }
+
+        .title {
+            color: $secondary-dark;
+        }
+    }
+
+    .story-card {
+        .story-subtitle {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            margin-bottom: 1rem;
+            color: $primary;
+        }
+
+        .story-title {
+            font-size: 2.5rem;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-family: $font-serif;
+        }
+
+        .story-link {
+            border-bottom: 1px solid currentColor;
+            padding-bottom: 0.5rem;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+        }
+    }
+}
+
+#shop {
+    background-color: $neutral-300;
+
+    .shop-header {
+        margin-bottom: 3rem;
+
+        .subtitle {
+            font-size: 0.875rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $neutral-400;
+            letter-spacing: 0.2em;
+        }
+
+        .title {
+            font-family: $font-serif;
+            color: $secondary-dark;
+
+            span {
+                color: $primary;
+            }
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            background-color: #C7A243;
+        }
+    }
+}
+
+#testimonials {
+    background-color: #ffffff;
+    text-align: center;
+
+    .testimonial-text {
+        font-size: 2rem;
+        font-family: $font-serif;
+        margin-bottom: 3rem;
+        line-height: 1.6;
+    }
+
+    .stars {
+        color: $primary;
+    }
+
+    .author-name {
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 0.875rem;
+        font-weight: bold;
+    }
+
+    .author-title {
+        color: $neutral-400;
+        font-size: 0.875rem;
+    }
+}
+
+#boutiques {
+    background-color: $secondary-dark;
+    color: white;
+    position: relative;
+    overflow: hidden;
+
+    .decoration {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0.1;
+        transform: translate(20%, 20%);
+
+        .icon-bg {
+            color: $primary;
+        }
+    }
+
+    .subtitle {
+        color: $primary;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        font-size: 0.875rem;
+        font-weight: bold;
+    }
+
+    .title {
+        font-family: $font-serif;
+    }
+
+    .boutique-item {
+        h4 {
+            color: $primary;
+            font-family: $font-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: $neutral-400;
+            font-weight: 300;
+        }
+    }
+}
+
+#instagram-feed {
+    background-color: #ffffff;
+    text-align: center;
+    padding-bottom: 0 !important;
+
+    .container {
+        margin-bottom: 6rem;
+
+        .subtitle {
+            color: $secondary;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            font-size: 0.875rem;
+            font-weight: bold;
+        }
+
+        .title {
+            color: $secondary-dark;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-family: $font-serif;
+        }
+
+        .follow-link {
+            color: #6b7280;
+            text-decoration: underline;
+            font-size: 0.875rem;
+            letter-spacing: 0.2em;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
