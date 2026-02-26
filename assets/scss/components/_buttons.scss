@@ -37,14 +37,30 @@
     }
 }
 
-// Variant: Secondary (Dark Outline)
+// Variant: Secondary (Brand Green)
 .btn--secondary {
-    @include btn-variant(transparent,
-        $secondary-dark,
-        $secondary-dark,
-        $secondary-dark,
+    @include btn-variant($secondary-dark,
         $neutral-100,
+        transparent,
+        $primary,
+        $secondary-dark,
         $btn-shadow-secondary-hover );
+
+    border-radius: 0;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    .hero-btn-icon {
+        transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); // premium shadow
+
+        .hero-btn-icon {
+            transform: translateX(6px);
+        }
+    }
 }
 
 // Variant: Outline (Primary Outline)

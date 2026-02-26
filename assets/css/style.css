@@ -236,14 +236,28 @@ a {
 }
 
 .btn--secondary {
-  background-color: transparent;
-  color: #052b21;
-  border-color: #052b21;
-}
-.btn--secondary:hover {
   background-color: #052b21;
   color: #ffffff;
+  border-color: transparent;
+}
+.btn--secondary:hover {
+  background-color: #C7A243;
+  color: #052b21;
   box-shadow: 0 10px 25px -5px rgba(5, 43, 33, 0.4);
+}
+.btn--secondary {
+  border-radius: 0;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.btn--secondary .hero-btn-icon {
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.btn--secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.btn--secondary:hover .hero-btn-icon {
+  transform: translateX(6px);
 }
 
 .btn--outline, .home-two .home-two__campaign-cta {
