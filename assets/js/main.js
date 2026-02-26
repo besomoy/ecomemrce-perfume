@@ -44,6 +44,29 @@ const swiper = new Swiper('.hero-slider', {
     },
 });
 
+// Testimonial Slider
+const testimonialSwiper = new Swiper('.testimonial-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.testimonial-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        }
+    }
+});
+
 // Scroll Reveal
 const revealElements = document.querySelectorAll('.reveal');
 

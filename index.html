@@ -546,7 +546,10 @@
             </div>
 
             <div class="mt-5 text-center pt-5">
-                <a href="#" class="btn btn--secondary">View Full Collections</a>
+                <a href="#" class="btn btn--secondary">
+                    View Full Collections
+                    <i data-lucide="arrow-right" width="20" class="ms-2 hero-btn-icon"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -554,26 +557,83 @@
     <!-- Testimonial Section -->
     <section id="testimonials" class="py-section">
         <div class="container reveal">
-            <div class="mb-4">
-                <i data-lucide="quote" class="text-primary mb-3" width="40" height="40"></i>
+            <div class="text-center mb-5">
+                <span class="subtitle d-block mb-2 text-primary text-uppercase tracking-ultra small fw-bold">Voices of
+                    Elegance</span>
+                <h2 class="display-4 title font-serif text-secondary-dark">Client Testimonials</h2>
+                <div class="divider mx-auto mt-3" style="width: 60px; height: 2px; background-color: #C7A243;"></div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <p class="testimonial-text">
-                        "The most exquisite fragrance I have ever encountered. <br>
-                        It doesn't just smell like perfume; it smells like a lived memory, <br>
-                        captured in a bottle of pure gold."
-                    </p>
-                    <div class="stars d-flex justify-content-center gap-1 mb-4">
-                        <i data-lucide="star" fill="#d4af37" width="16"></i>
-                        <i data-lucide="star" fill="#d4af37" width="16"></i>
-                        <i data-lucide="star" fill="#d4af37" width="16"></i>
-                        <i data-lucide="star" fill="#d4af37" width="16"></i>
-                        <i data-lucide="star" fill="#d4af37" width="16"></i>
+
+            <div class="swiper testimonial-swiper pb-5">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <i data-lucide="quote" class="quote-icon" width="40" height="40"></i>
+                            <p class="testimonial-text">
+                                "The most exquisite fragrance I have ever encountered. It doesn't just smell like
+                                perfume; it smells like a lived memory, captured in a bottle of pure gold."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="stars d-flex gap-1 mb-2">
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                </div>
+                                <p class="author-name">Eléonore de Rothschild</p>
+                                <p class="author-title">Vogue France</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="author-name">Eléonore de Rothschild</p>
-                    <p class="author-title">Vogue France</p>
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <i data-lucide="quote" class="quote-icon" width="40" height="40"></i>
+                            <p class="testimonial-text">
+                                "Noir Absolu is a revelation. The deep, woody notes combined with the subtle hint of
+                                spice create an aura of pure mystery and sophistication."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="stars d-flex gap-1 mb-2">
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                </div>
+                                <p class="author-name">Julian Vance</p>
+                                <p class="author-title">Creative Director</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <i data-lucide="quote" class="quote-icon" width="40" height="40"></i>
+                            <p class="testimonial-text">
+                                "From the moment I opened the beautiful artisanal packaging, I knew this was more than a
+                                scent—it was an experience. Azure Crystal is breathtaking."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="stars d-flex gap-1 mb-2">
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                    <i data-lucide="star" fill="#d4af37" width="14"></i>
+                                    <i data-lucide="star-half" fill="#d4af37" width="14"></i>
+                                </div>
+                                <p class="author-name">Sophia Laurent</p>
+                                <p class="author-title">Fragrance Connoisseur</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination testimonial-pagination"></div>
             </div>
         </div>
     </section>
@@ -603,7 +663,10 @@
                     </div>
 
                     <div class="mt-5 pt-4">
-                        <a href="#" class="btn btn--primary px-5">Explore All Locations</a>
+                        <a href="#" class="btn btn--primary">
+                            Explore All Locations
+                            <i data-lucide="arrow-right" width="20" class="ms-2 hero-btn-icon"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block">

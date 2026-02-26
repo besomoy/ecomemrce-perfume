@@ -396,30 +396,94 @@
 }
 
 #testimonials {
-    background-color: #ffffff;
-    text-align: center;
+    background-color: $neutral-300;
+    overflow: hidden;
 
-    .testimonial-text {
-        font-size: 2rem;
-        font-family: $font-serif;
-        margin-bottom: 3rem;
-        line-height: 1.6;
+    .testimonial-swiper {
+        padding-top: 20px;
+        padding-bottom: 60px;
     }
 
-    .stars {
-        color: $primary;
+    .testimonial-card {
+        background: #ffffff;
+        padding: 3rem;
+        border-radius: 1.5rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba($primary, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+            border-color: rgba($primary, 0.3);
+        }
+
+        .quote-icon {
+            color: rgba($primary, 0.2);
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            z-index: -1;
+            width: 80px;
+            height: 80px;
+        }
+
+        .testimonial-text {
+            font-size: 1.25rem;
+            font-family: $font-serif;
+            font-style: italic;
+            color: $secondary-dark;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .testimonial-author {
+            margin-top: auto;
+            border-top: 1px solid rgba($secondary, 0.1);
+            padding-top: 1.5rem;
+
+            .author-name {
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+                font-size: 0.875rem;
+                font-weight: 700;
+                color: $secondary-dark;
+                margin-bottom: 0.25rem;
+            }
+
+            .author-title {
+                color: $neutral-400;
+                font-size: 0.75rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                margin-bottom: 0;
+            }
+        }
     }
 
-    .author-name {
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        font-size: 0.875rem;
-        font-weight: bold;
-    }
+    .testimonial-pagination {
+        bottom: 0;
 
-    .author-title {
-        color: $neutral-400;
-        font-size: 0.875rem;
+        .swiper-pagination-bullet {
+            background-color: rgba($secondary-dark, 0.2);
+            opacity: 1;
+            width: 8px;
+            height: 8px;
+            transition: all 0.3s;
+            border: none;
+
+            &-active {
+                background-color: $primary;
+                width: 24px;
+                border-radius: 4px;
+            }
+        }
     }
 }
 
