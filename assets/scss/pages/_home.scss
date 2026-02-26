@@ -400,9 +400,6 @@
 
     .testimonial-modern-wrapper {
         position: relative;
-        background-color: #f7f9fa;
-        /* Light grey backdrop */
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
         padding: 4rem;
         border-radius: 0;
         overflow: hidden;
@@ -444,30 +441,34 @@
     }
 
     .author-name {
-        font-size: 0.95rem;
+        font-size: 1.15rem;
         font-weight: 700;
         letter-spacing: 0.1em;
         color: $secondary-dark;
     }
 
     .author-title {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
         letter-spacing: 0.1em;
         text-transform: uppercase;
+        color: $primary;
+        font-weight: 600;
     }
 
     .rating {
-        color: $secondary-dark;
+        color: $primary;
     }
 
     .testimonial-text {
-        font-size: 1.15rem;
+        font-size: 1.6rem;
         line-height: 1.8;
-        color: $neutral-400;
-        font-weight: 300;
+        color: $secondary-dark;
+        font-weight: 400;
+        font-family: $font-serif;
+        font-style: italic;
 
         @media (max-width: 991.98px) {
-            font-size: 1.05rem;
+            font-size: 1.25rem;
         }
     }
 
