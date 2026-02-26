@@ -220,6 +220,20 @@ a {
   color: #052b21;
   box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.5);
 }
+.btn--primary, .home-one .home-one__hero-cta {
+  border-radius: 0;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.btn--primary .hero-btn-icon, .home-one .home-one__hero-cta .hero-btn-icon {
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.btn--primary:hover, .home-one .home-one__hero-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.btn--primary:hover .hero-btn-icon, .home-one .home-one__hero-cta:hover .hero-btn-icon {
+  transform: translateX(6px);
+}
 
 .btn--secondary {
   background-color: transparent;

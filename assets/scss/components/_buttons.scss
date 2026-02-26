@@ -13,62 +13,68 @@
 
 // Variant: Primary (Gold)
 .btn--primary {
-    @include btn-variant(
-        $primary,
+    @include btn-variant($primary,
         $secondary-dark,
         transparent,
         $neutral-100,
         $secondary-dark,
-        $btn-shadow-primary-hover
-    );
+        $btn-shadow-primary-hover );
+
+    border-radius: 0;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    .hero-btn-icon {
+        transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); // premium shadow
+
+        .hero-btn-icon {
+            transform: translateX(6px);
+        }
+    }
 }
 
 // Variant: Secondary (Dark Outline)
 .btn--secondary {
-    @include btn-variant(
-        transparent,
+    @include btn-variant(transparent,
         $secondary-dark,
         $secondary-dark,
         $secondary-dark,
         $neutral-100,
-        $btn-shadow-secondary-hover
-    );
+        $btn-shadow-secondary-hover );
 }
 
 // Variant: Outline (Primary Outline)
 .btn--outline {
-    @include btn-variant(
-        transparent,
+    @include btn-variant(transparent,
         $primary,
         $primary,
         $primary,
         $neutral-100,
-        $btn-shadow-primary-hover
-    );
+        $btn-shadow-primary-hover );
 }
 
 // Variant: Ghost (Minimal)
 .btn--ghost {
-    @include btn-variant(
-        transparent,
+    @include btn-variant(transparent,
         $secondary-dark,
         transparent,
         rgba($secondary-dark, 0.08),
         $secondary-dark,
-        null
-    );
+        null);
 }
 
 // Variant: Danger
 .btn--danger {
-    @include btn-variant(
-        $danger,
+    @include btn-variant($danger,
         $neutral-100,
         $danger,
         $danger-dark,
         $neutral-100,
-        $btn-shadow-danger-hover
-    );
+        $btn-shadow-danger-hover );
 }
 
 // Variant: Text Link (Legacy)
