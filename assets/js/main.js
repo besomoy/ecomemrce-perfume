@@ -44,26 +44,22 @@ const swiper = new Swiper('.hero-slider', {
     },
 });
 
-// Testimonial Slider
+// Testimonial Modern Slider
 const testimonialSwiper = new Swiper('.testimonial-swiper', {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 40,
     loop: true,
     autoplay: {
-        delay: 5000,
+        delay: 6000,
         disableOnInteraction: false,
     },
-    pagination: {
-        el: '.testimonial-pagination',
-        clickable: true,
+    navigation: {
+        nextEl: '.testimonial-nav .next-btn',
+        prevEl: '.testimonial-nav .prev-btn',
     },
-    breakpoints: {
-        768: {
-            slidesPerView: 2,
-        },
-        992: {
-            slidesPerView: 3,
-        }
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
     }
 });
 
