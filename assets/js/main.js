@@ -171,3 +171,61 @@ productCards.forEach(card => {
         });
     }
 });
+
+// Category Slider
+const categorySwiper = new Swiper('.category-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    loop: false,
+    navigation: {
+        nextEl: '.cat-next-btn',
+        prevEl: '.cat-prev-btn',
+    },
+    pagination: {
+        el: '.category-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        }
+    }
+});
+
+// Category filtering
+const categoryTabs = document.querySelectorAll('.category-tabs .btn');
+const categorySlides = document.querySelectorAll('.category-swiper .swiper-slide');
+
+categoryTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Remove active class
+        categoryTabs.forEach(t => {
+            t.classList.remove('btn-dark', 'active');
+            t.classList.add('btn-outline-secondary');
+        });
+        
+        // Add active class
+        tab.classList.remove('btn-outline-secondary');
+        tab.classList.add('btn-dark', 'active');
+        
+        const filter = tab.getAttribute('data-filter');
+        
+        // Filter slides
+        categorySlides.forEach(slide => {
+            if (filter === '*' || slide.classList.contains(filter.substring(1))) {
+                slide.style.display = '';
+            } else {
+                slide.style.display = 'none';
+            }
+        });
+        
+        categorySwiper.update();
+        categorySwiper.slideTo(0);
+    });
+});
