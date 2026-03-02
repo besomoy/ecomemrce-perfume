@@ -162,6 +162,23 @@ Example:
 }
 ```
 
+### 5.2 Section Comment Convention (Mandatory)
+
+For every `<section>` block:
+1. Keep exactly two section comments only:
+   - One immediately before the opening `<section>`
+   - One immediately after the closing `</section>`
+2. Use this format:
+```html
+<!-- Section Name Section -->
+<section id="...">
+  ...
+</section>
+<!-- Section Name Section End -->
+```
+3. Do not add any additional HTML comments inside `<section>...</section>`.
+4. Head/script/library comments outside sections are allowed.
+
 ---
 
 ## 6. Decision Rules (Mandatory Logic)
