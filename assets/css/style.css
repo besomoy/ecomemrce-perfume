@@ -1341,7 +1341,7 @@ a {
   overflow: hidden;
 }
 
-#index-3-section-8 {
+#social-journal {
   background-color: #ffffff;
   text-align: center;
   padding-bottom: 0 !important;
@@ -1828,38 +1828,38 @@ a {
   pointer-events: none;
 }
 
-#boutiques {
+#stores {
   background-color: #052b21;
   color: white;
   position: relative;
   overflow: hidden;
 }
-#boutiques .decoration {
+#stores .decoration {
   position: absolute;
   bottom: 0;
   right: 0;
   opacity: 0.1;
   transform: translate(20%, 20%);
 }
-#boutiques .decoration .icon-bg {
+#stores .decoration .icon-bg {
   color: #C7A243;
 }
-#boutiques .subtitle {
+#stores .subtitle {
   color: #C7A243;
   text-transform: uppercase;
   letter-spacing: 0.3em;
   font-size: 0.875rem;
   font-weight: bold;
 }
-#boutiques .title {
+#stores .title {
   font-family: "Playfair Display", serif;
 }
-#boutiques .boutique-item h4 {
+#stores .store-item h4 {
   color: #C7A243;
   font-family: "Playfair Display", serif;
   margin-bottom: 0.5rem;
 }
-#boutiques .boutique-item p {
+#stores .store-item p {
   color: #8f8f8f;
   font-weight: 300;
 }
@@ -1905,10 +1905,10 @@ a {
   padding-left: 2.8rem;
   padding-right: 2.8rem;
 }
-.home-one #boutiques .boutique-content-box {
+.home-one #stores .store-content-box {
   max-width: 600px;
 }
-.home-one #boutiques .boutique-main-img {
+.home-one #stores .store-main-img {
   aspect-ratio: 1/1;
 }
 
@@ -2913,6 +2913,10 @@ a {
   color: rgba(255, 255, 255, 0.92);
 }
 
+.page-index-3 .forest-footer {
+  padding-top: 80px;
+}
+
 .page-index-3 .forest-hero {
   position: relative;
   overflow: hidden;
@@ -2951,6 +2955,18 @@ a {
   background: linear-gradient(120deg, var(--hero-mist, var(--forest-mist)) 0%, var(--hero-accent, var(--forest-sage)) 100%);
   color: var(--hero-ink, var(--forest-dark));
   overflow: hidden;
+}
+
+.page-index-3 .forest-hero-slide--atelier {
+  --hero-accent: #a7c8a0;
+  --hero-mist: #dcead7;
+  --hero-ink: #0b2f24;
+}
+
+.page-index-3 .forest-hero-slide--new-collection {
+  --hero-accent: #bfd6b0;
+  --hero-mist: #eef4e9;
+  --hero-ink: #0b2f24;
 }
 
 .page-index-3 .forest-hero-pattern {

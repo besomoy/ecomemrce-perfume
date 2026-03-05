@@ -15,12 +15,12 @@
         padding-right: 2.8rem;
     }
 
-    #boutiques {
-        .boutique-content-box {
+    #stores {
+        .store-content-box {
             max-width: 600px;
         }
 
-        .boutique-item {
+        .store-item {
             padding: 2.5rem;
             background: rgba($neutral-100, 0.03);
             border: 1px solid rgba($primary, 0.1);
@@ -52,7 +52,7 @@
             }
         }
 
-        .boutique-main-img {
+        .store-main-img {
             aspect-ratio: 1/1;
         }
     }
