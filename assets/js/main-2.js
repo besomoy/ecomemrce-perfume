@@ -88,9 +88,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.querySelector('.testimonial-slider')) {
         new Swiper('.testimonial-slider', {
             slidesPerView: 1,
-            autoplay: { delay: 4000 },
-            pagination: { el: '.swiper-pagination', clickable: true },
-            loop: true
+            speed: 700,
+            autoplay: { delay: 5500, disableOnInteraction: false },
+            loop: true,
+            watchOverflow: false,
+            navigation: {
+                nextEl: '.testimonial-next',
+                prevEl: '.testimonial-prev',
+            },
+            pagination: {
+                el: '.testimonial-pagination',
+                clickable: true,
+            },
         });
     }
 

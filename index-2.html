@@ -106,14 +106,12 @@
                 <a href="#" class="nav-icon" title="Account"><i data-lucide="user" width="20"></i></a>
                 <a href="#" class="nav-icon position-relative" title="Wishlist">
                     <i data-lucide="heart" width="20"></i>
-                    <span
-                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary text-ink"
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary text-ink"
                         style="font-size: 0.45rem;">0</span>
                 </a>
                 <a href="#" class="nav-icon position-relative" title="Cart">
                     <i data-lucide="shopping-bag" width="20"></i>
-                    <span
-                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary text-ink"
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary text-ink"
                         style="font-size: 0.45rem;">0</span>
                 </a>
             </div>
@@ -293,6 +291,24 @@
     </section>
     <!-- Hero Product Spotlight Section End -->
 
+    <!-- Promotional Video Section -->
+    <section id="promotional-video" class="promotional-video position-relative w-100 overflow-hidden"
+        style="height: 70vh;">
+        <video autoplay loop muted playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0">
+            <source src="./assets/video/promo.mp4" type="video/mp4">
+        </video>
+        <div
+            class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 z-1 d-flex align-items-center justify-content-center">
+            <div class="text-center text-white px-3 reveal-text">
+                <span class="text-uppercase tracking-widest-custom small fw-bold d-block mb-3 text-primary">The Art of
+                    Gifting</span>
+                <h2 class="display-3 font-serif fst-italic text-white mb-4">Curate Your Surprise</h2>
+                <a href="#" class="home-two__video-cta">Create Your Gift Box</a>
+            </div>
+        </div>
+    </section>
+    <!-- Promotional Video Section End -->
+
 
     <!-- New Arrivals Section -->
     <section id="new-arrivals" class="py-section">
@@ -309,55 +325,502 @@
             </div>
 
             <div class="swiper product-slider">
-                <div class="swiper-wrapper">
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- New Arrivals Section End -->
 
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="product-img">
-                                <img src="./assets/images/product-3.png" alt="Rose Royale">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-category">Pour Femme</div>
-                                <h3 class="product-title">Rose Royale</h3>
-                                <div class="product-price">$280.00</div>
-                                <button class="btn-add-to-cart">Add to Cart</button>
-                            </div>
+    <!-- Products Section (4 per row) -->
+    <section id="featured-products" class="py-section">
+        <div class="container">
+            <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col">
+                    <div class="product-card h-100">
+                        <div class="product-img">
+                            <img src="./assets/images/product-3.png" alt="Rose Royale">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Pour Femme</div>
+                            <h3 class="product-title">Rose Royale</h3>
+                            <div class="product-price">$280.00</div>
+                            <button class="btn-add-to-cart">Add to Cart</button>
                         </div>
                     </div>
-
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="product-badge">New</div>
-                            <div class="product-img">
-                                <img src="./assets/images/product-2.png" alt="Noir Intense">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-category">Pour Homme</div>
-                                <h3 class="product-title">Noir Intense</h3>
-                                <div class="product-price">$240.00</div>
-                                <button class="btn-add-to-cart">Add to Cart</button>
-                            </div>
+                </div>
+                <div class="col">
+                    <div class="product-card h-100">
+                        <div class="product-badge">New</div>
+                        <div class="product-img">
+                            <img src="./assets/images/product-2.png" alt="Noir Intense">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Pour Homme</div>
+                            <h3 class="product-title">Noir Intense</h3>
+                            <div class="product-price">$240.00</div>
+                            <button class="btn-add-to-cart">Add to Cart</button>
                         </div>
                     </div>
-
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="product-img">
-                                <img src="./assets/images/product-1.jpg" alt="Gold Standard">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-category">Unisex</div>
-                                <h3 class="product-title">Gold Standard</h3>
-                                <div class="product-price">$320.00</div>
-                                <button class="btn-add-to-cart">Add to Cart</button>
-                            </div>
+                </div>
+                <div class="col">
+                    <div class="product-card h-100">
+                        <div class="product-img">
+                            <img src="./assets/images/product-1.jpg" alt="Gold Standard">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Unisex</div>
+                            <h3 class="product-title">Gold Standard</h3>
+                            <div class="product-price">$320.00</div>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card h-100">
+                        <div class="product-img">
+                            <img src="./assets/images/product-2.png" alt="Oud Majesty">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Pour Homme</div>
+                            <h3 class="product-title">Oud Majesty</h3>
+                            <div class="product-price">$350.00</div>
+                            <button class="btn-add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- New Arrivals Section End -->
+    <!-- Products Section End -->
+
+    <!-- Creative Banner Section -->
+    <section id="creative-banner" class="py-section">
+        <div class="container-fluid px-lg-5">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="position-relative overflow-hidden h-100" style="min-height: 500px;">
+                        <img src="./assets/images/perfume-lab.png"
+                            class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 hover-scale"
+                            alt="Atelier" style="transition: transform 0.6s ease;">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-5 z-1"
+                            style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                            <span class="text-primary text-uppercase tracking-widest-custom small fw-bold">From the
+                                Lab</span>
+                            <h3 class="display-5 font-serif fst-italic text-white mt-2 mb-4">The Atelier</h3>
+                            <a href="#" class="btn btn-outline-light rounded-0 px-4 py-2">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex flex-column gap-4">
+                    <div class="position-relative overflow-hidden h-50" style="min-height: 240px;">
+                        <img src="./assets/images/hero_azure.png"
+                            class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 hover-scale"
+                            alt="Fresh Scents" style="transition: transform 0.6s ease;">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-4 z-1"
+                            style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                            <h3 class="h3 font-serif fst-italic text-white mb-2">Fresh Collection</h3>
+                            <a href="#"
+                                class="text-white text-decoration-none border-bottom border-white pb-1 font-serif small">Shop
+                                Now</a>
+                        </div>
+                    </div>
+                    <div class="position-relative overflow-hidden h-50" style="min-height: 240px;">
+                        <img src="./assets/images/hero_noir.png"
+                            class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 hover-scale"
+                            alt="Night Collection" style="transition: transform 0.6s ease;">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-4 z-1"
+                            style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                            <h3 class="h3 font-serif fst-italic text-white mb-2">Night Editions</h3>
+                            <a href="#"
+                                class="text-white text-decoration-none border-bottom border-white pb-1 font-serif small">Shop
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Creative Banner Section End -->
+
+    <!-- Additional Products (2 rows) -->
+    <section id="additional-products" class="py-section">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="subtitle">Complete Your Wardrobe</span>
+                <h2>More Suggestions</h2>
+            </div>
+            <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col">
+                    <div class="product-card h-100">
+                        <div class="product-img">
+                            <img src="./assets/images/product-2.png" alt="Citrus Glow">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Unisex</div>
+                            <h3 class="product-title">Citrus Glow</h3>
+                            <div class="product-price">$240.00</div>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card h-100">
+                        <div class="product-img">
+                            <img src="./assets/images/product-3.png" alt="Rose Enigma">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Pour Femme</div>
+                            <h3 class="product-title">Rose Enigma</h3>
+                            <div class="product-price">$310.00</div>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card h-100">
+                        <div class="product-img">
+                            <img src="./assets/images/product-1.jpg" alt="Dark Leather">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Pour Homme</div>
+                            <h3 class="product-title">Dark Leather</h3>
+                            <div class="product-price">$380.00</div>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card h-100">
+                        <div class="product-img">
+                            <img src="./assets/images/product-2.png" alt="Aqua Marine">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Unisex</div>
+                            <h3 class="product-title">Aqua Marine</h3>
+                            <div class="product-price">$210.00</div>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card h-100">
+                        <div class="product-img">
+                            <img src="./assets/images/product-3.png" alt="Sandalwood Night">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Pour Homme</div>
+                            <h3 class="product-title">Sandalwood Night</h3>
+                            <div class="product-price">$320.00</div>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card h-100">
+                        <div class="product-img">
+                            <img src="./assets/images/product-1.jpg" alt="Floral Wish">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Pour Femme</div>
+                            <h3 class="product-title">Floral Wish</h3>
+                            <div class="product-price">$275.00</div>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card h-100">
+                        <div class="product-img">
+                            <img src="./assets/images/product-2.png" alt="Spicy Amber">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Unisex</div>
+                            <h3 class="product-title">Spicy Amber</h3>
+                            <div class="product-price">$340.00</div>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card h-100">
+                        <div class="product-img">
+                            <img src="./assets/images/product-3.png" alt="Cedar Touch">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Pour Homme</div>
+                            <h3 class="product-title">Cedar Touch</h3>
+                            <div class="product-price">$295.00</div>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Additional Products End -->
+
+    <!-- Product Testimonials -->
+    <section id="creative-testimonials" class="py-section bg-secondary overflow-hidden">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="subtitle text-primary">Verified Reviews</span>
+                <h2 class="text-white">What Our Clients Say</h2>
+            </div>
+        </div>
+
+        <div class="swiper testimonial-slider">
+            <div class="swiper-wrapper">
+
+                <!-- Testimonial 1 — Noir Intense -->
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row align-items-stretch g-0" style="min-height: 480px;">
+                            <!-- Left: Product -->
+                            <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center text-center py-5"
+                                style="background: rgba(255,255,255,0.04); border: 1px solid rgba(199,162,67,0.2);">
+                                <div class="mb-4"
+                                    style="width: 180px; height: 180px; background: rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center;">
+                                    <img src="./assets/images/product-2.png" alt="Noir Intense"
+                                        style="height: 160px; width: auto; object-fit: contain;">
+                                </div>
+                                <div class="text-primary fw-bold mb-1"
+                                    style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;">Pour
+                                    Homme</div>
+                                <h3 class="font-serif text-white mb-2" style="font-size: 1.5rem;">Noir Intense</h3>
+                                <div class="fw-bold" style="color: #C7A243; font-size: 1.1rem;">$240.00</div>
+                                <a href="#" class="mt-4 px-4 py-2 text-white fw-bold"
+                                    style="font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; border: 1px solid rgba(199,162,67,0.5); background: transparent; text-decoration: none;">View
+                                    Product</a>
+                            </div>
+                            <!-- Right: Review -->
+                            <div class="col-lg-8 d-flex flex-column justify-content-center px-5 py-5"
+                                style="border: 1px solid rgba(199,162,67,0.15); border-left: none;">
+                                <i data-lucide="quote" class="text-primary mb-4"
+                                    style="width: 48px; height: 48px; opacity: 0.6;"></i>
+                                <p class="font-serif fst-italic text-white mb-5"
+                                    style="font-size: 1.45rem; line-height: 1.7;">
+                                    "A bold fusion of earthy spices and luxury. I get compliments everywhere I go. It
+                                    has completely redefined what I look for in a signature scent."
+                                </p>
+                                <div class="d-flex align-items-center gap-4">
+                                    <div class="text-primary d-flex gap-1">
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-white fw-bold">Marcus V.</div>
+                                        <div class="text-primary"
+                                            style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;">
+                                            Verified Buyer · New York</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 — Gold Standard -->
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row align-items-stretch g-0" style="min-height: 480px;">
+                            <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center text-center py-5"
+                                style="background: rgba(255,255,255,0.04); border: 1px solid rgba(199,162,67,0.2);">
+                                <div class="mb-4"
+                                    style="width: 180px; height: 180px; background: rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center;">
+                                    <img src="./assets/images/product-1.jpg" alt="Gold Standard"
+                                        style="height: 160px; width: auto; object-fit: contain;">
+                                </div>
+                                <div class="text-primary fw-bold mb-1"
+                                    style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;">Unisex
+                                </div>
+                                <h3 class="font-serif text-white mb-2" style="font-size: 1.5rem;">Gold Standard</h3>
+                                <div class="fw-bold" style="color: #C7A243; font-size: 1.1rem;">$320.00</div>
+                                <a href="#" class="mt-4 px-4 py-2 text-white fw-bold"
+                                    style="font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; border: 1px solid rgba(199,162,67,0.5); background: transparent; text-decoration: none;">View
+                                    Product</a>
+                            </div>
+                            <div class="col-lg-8 d-flex flex-column justify-content-center px-5 py-5"
+                                style="border: 1px solid rgba(199,162,67,0.15); border-left: none;">
+                                <i data-lucide="quote" class="text-primary mb-4"
+                                    style="width: 48px; height: 48px; opacity: 0.6;"></i>
+                                <p class="font-serif fst-italic text-white mb-5"
+                                    style="font-size: 1.45rem; line-height: 1.7;">
+                                    "Unmatchable longevity. I can wear this from a morning meeting all the way to a
+                                    late-night dinner without it fading. Absolutely worth every penny."
+                                </p>
+                                <div class="d-flex align-items-center gap-4">
+                                    <div class="text-primary d-flex gap-1">
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                        <i data-lucide="star-half" width="18" fill="currentColor"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-white fw-bold">Elara T.</div>
+                                        <div class="text-primary"
+                                            style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;">
+                                            Verified Buyer · London</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 — Rose Royale -->
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row align-items-stretch g-0" style="min-height: 480px;">
+                            <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center text-center py-5"
+                                style="background: rgba(255,255,255,0.04); border: 1px solid rgba(199,162,67,0.2);">
+                                <div class="mb-4"
+                                    style="width: 180px; height: 180px; background: rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center;">
+                                    <img src="./assets/images/product-3.png" alt="Rose Royale"
+                                        style="height: 160px; width: auto; object-fit: contain;">
+                                </div>
+                                <div class="text-primary fw-bold mb-1"
+                                    style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;">Pour
+                                    Femme</div>
+                                <h3 class="font-serif text-white mb-2" style="font-size: 1.5rem;">Rose Royale</h3>
+                                <div class="fw-bold" style="color: #C7A243; font-size: 1.1rem;">$280.00</div>
+                                <a href="#" class="mt-4 px-4 py-2 text-white fw-bold"
+                                    style="font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; border: 1px solid rgba(199,162,67,0.5); background: transparent; text-decoration: none;">View
+                                    Product</a>
+                            </div>
+                            <div class="col-lg-8 d-flex flex-column justify-content-center px-5 py-5"
+                                style="border: 1px solid rgba(199,162,67,0.15); border-left: none;">
+                                <i data-lucide="quote" class="text-primary mb-4"
+                                    style="width: 48px; height: 48px; opacity: 0.6;"></i>
+                                <p class="font-serif fst-italic text-white mb-5"
+                                    style="font-size: 1.45rem; line-height: 1.7;">
+                                    "The packaging alone is worth the price — but the fragrance itself is a true
+                                    masterpiece. Delicate, floral, yet with an incredible depth. A modern classic."
+                                </p>
+                                <div class="d-flex align-items-center gap-4">
+                                    <div class="text-primary d-flex gap-1">
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                        <i data-lucide="star" width="18" fill="currentColor"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-white fw-bold">Julian C.</div>
+                                        <div class="text-primary"
+                                            style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;">
+                                            Verified Buyer · Paris</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Navigation -->
+            <div class="container mt-5 d-flex align-items-center gap-4">
+                <button class="testimonial-prev"
+                    style="background: transparent; border: 1px solid rgba(199,162,67,0.4); color: #C7A243; width: 48px; height: 48px; display:flex; align-items:center; justify-content:center; cursor:pointer; transition: all 0.3s;">
+                    <i data-lucide="arrow-left" width="20"></i>
+                </button>
+                <div class="swiper-pagination testimonial-pagination" style="position: static; width: auto; flex: 1;">
+                </div>
+                <button class="testimonial-next"
+                    style="background: transparent; border: 1px solid rgba(199,162,67,0.4); color: #C7A243; width: 48px; height: 48px; display:flex; align-items:center; justify-content:center; cursor:pointer; transition: all 0.3s;">
+                    <i data-lucide="arrow-right" width="20"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Product Testimonials End -->
+
+    <!-- Blog Section -->
+    <section id="blog-preview" class="py-section" style="background: #f9f6f1;">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-end mb-5">
+                <div>
+                    <span class="subtitle">Journal</span>
+                    <h2 class="mb-0" style="color: #083c2f;">Latest Stories</h2>
+                </div>
+                <a href="blog.html" class="btn mt-3 mt-md-0 px-4 py-2 fw-bold"
+                    style="border: 1px solid #083c2f; color: #083c2f; background: transparent; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">View
+                    All Articles</a>
+            </div>
+
+            <div class="row g-0">
+                <!-- Featured Post -->
+                <div class="col-lg-6 pe-lg-1">
+                    <div class="position-relative overflow-hidden h-100" style="min-height: 380px;">
+                        <img src="./assets/images/hero.png" class="w-100 h-100 object-fit-cover"
+                            alt="Inside the Paris Atelier" style="transition: transform 0.7s;">
+                        <div class="position-absolute inset-0 w-100 h-100"
+                            style="background: linear-gradient(to top, rgba(8,60,47,0.9) 0%, transparent 60%); top: 0; left: 0;">
+                        </div>
+                        <div class="position-absolute bottom-0 start-0 p-5" style="z-index: 2;">
+                            <span
+                                style="background: #C7A243; color: #083c2f; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; padding: 4px 10px;">Featured</span>
+                            <h3 class="font-serif text-white mt-3 mb-2" style="font-size: 1.8rem; line-height: 1.3;">
+                                Inside the Paris Atelier</h3>
+                            <p class="text-white mb-4" style="opacity: 0.75; font-size: 0.9rem; max-width: 380px;">A
+                                rare glimpse into the hands, rituals, and finest raw materials that shape our most
+                                iconic blends.</p>
+                            <a href="blog-details.html" class="text-white fw-bold text-decoration-none"
+                                style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; border-bottom: 1px solid #C7A243; padding-bottom: 3px;">Read
+                                Full Story</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Posts -->
+                <div class="col-lg-6 ps-lg-1 d-flex flex-column gap-1 mt-1 mt-lg-0">
+                    <!-- Post 2 -->
+                    <div class="d-flex overflow-hidden" style="flex: 1; min-height: 185px; background: #fff;">
+                        <div class="flex-shrink-0" style="width: 200px; overflow: hidden;">
+                            <img src="./assets/images/hero_noir.png" class="w-100 h-100 object-fit-cover"
+                                alt="The Noir Collection" style="transition: transform 0.7s;">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center p-4 flex-grow-1">
+                            <span
+                                style="color: #C7A243; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase;">Collection
+                                · Apr 22, 2026</span>
+                            <h3 class="font-serif mt-2 mb-2" style="font-size: 1.15rem; color: #083c2f;">The Noir
+                                Collection</h3>
+                            <p style="color: #666; font-size: 0.85rem; line-height: 1.6;">Smoky notes and late-night
+                                inspirations behind our most daring scents.</p>
+                            <a href="blog-details.html" class="mt-3 fw-bold text-decoration-none"
+                                style="font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #083c2f; border-bottom: 1px solid #083c2f; padding-bottom: 2px; align-self: flex-start;">Read
+                                More</a>
+                        </div>
+                    </div>
+                    <!-- Post 3 -->
+                    <div class="d-flex overflow-hidden" style="flex: 1; min-height: 185px; background: #fff;">
+                        <div class="flex-shrink-0" style="width: 200px; overflow: hidden;">
+                            <img src="./assets/images/hero_azure.png" class="w-100 h-100 object-fit-cover"
+                                alt="Mediterranean Light" style="transition: transform 0.7s;">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center p-4 flex-grow-1">
+                            <span
+                                style="color: #C7A243; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase;">Inspiration
+                                · Apr 12, 2026</span>
+                            <h3 class="font-serif mt-2 mb-2" style="font-size: 1.15rem; color: #083c2f;">Mediterranean
+                                Light</h3>
+                            <p style="color: #666; font-size: 0.85rem; line-height: 1.6;">Coastal botanicals that shape
+                                our freshest blends and summer-ready compositions.</p>
+                            <a href="blog-details.html" class="mt-3 fw-bold text-decoration-none"
+                                style="font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #083c2f; border-bottom: 1px solid #083c2f; padding-bottom: 2px; align-self: flex-start;">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
 
 
 

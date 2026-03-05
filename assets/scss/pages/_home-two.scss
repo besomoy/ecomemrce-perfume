@@ -1,10 +1,54 @@
 .home-two {
+
+    // --- Global Sharp Override ---
+    // Remove ALL border-radius from every element on this page
+    *,
+    *::before,
+    *::after {
+        border-radius: 0 !important;
+    }
+
+    // Explicit component overrides to ensure sharp edges
+    .lux-card {
+        border-radius: 0 !important;
+    }
+
+    .lux-badge {
+        border-radius: 0 !important;
+    }
+
+    .btn {
+        border-radius: 0 !important;
+    }
+
+    .badge {
+        border-radius: 0 !important;
+    }
+
+    img {
+        border-radius: 0 !important;
+    }
+
     .home-two__campaign-cta {
         @extend .btn;
         @extend .btn--outline;
         @extend .btn--md;
-        border-radius: 999px;
         padding-left: 2.4rem;
         padding-right: 2.4rem;
+    }
+
+    .home-two__video-cta {
+        @extend .btn;
+        @extend .btn--primary;
+        @extend .btn--lg;
+        margin-top: 1.5rem;
+    }
+
+    .hover-scale {
+        transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 }
