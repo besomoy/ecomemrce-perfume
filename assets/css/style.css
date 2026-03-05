@@ -2392,24 +2392,24 @@ a {
   border-radius: 50%;
   opacity: 0.8;
 }
-.page-index-2 .hero-product {
+.page-index-2 #hero-product-section {
   background: linear-gradient(135deg, #072a23 0%, #020b09 100%);
   position: relative;
   border-top: 1px solid rgba(226, 192, 118, 0.1);
   border-bottom: 1px solid rgba(226, 192, 118, 0.1);
 }
-.page-index-2 .hero-product .hero-product-img {
+.page-index-2 #hero-product-section .hero-product-img {
   height: 900px;
   overflow: hidden;
   position: relative;
 }
-.page-index-2 .hero-product .hero-product-img img {
+.page-index-2 #hero-product-section .hero-product-img img {
   width: 100%;
   height: 110%;
   object-fit: cover;
   object-position: center;
 }
-.page-index-2 .hero-product .hero-product-content {
+.page-index-2 #hero-product-section .hero-product-content {
   padding: 80px 100px;
   color: #ffffff;
   display: flex;
@@ -2417,7 +2417,7 @@ a {
   justify-content: center;
   height: 100%;
 }
-.page-index-2 .hero-product .hero-product-content .subtitle {
+.page-index-2 #hero-product-section .hero-product-content .subtitle {
   display: block;
   color: #e2c076;
   font-family: "Lato", sans-serif;
@@ -2426,13 +2426,13 @@ a {
   letter-spacing: 4px;
   margin-bottom: 20px;
 }
-.page-index-2 .hero-product .hero-product-content h2 {
+.page-index-2 #hero-product-section .hero-product-content h2 {
   font-size: 5rem;
   margin-bottom: 40px;
   color: #ffffff;
   line-height: 1;
 }
-.page-index-2 .hero-product .hero-product-content p {
+.page-index-2 #hero-product-section .hero-product-content p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.2rem;
   line-height: 1.8;
@@ -2440,21 +2440,21 @@ a {
   max-width: 550px;
   font-weight: 300;
 }
-.page-index-2 .hero-product .hero-product-content .specs {
+.page-index-2 #hero-product-section .hero-product-content .specs {
   display: flex;
   gap: 80px;
   margin-bottom: 60px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 40px;
 }
-.page-index-2 .hero-product .hero-product-content .specs .spec-item .label {
+.page-index-2 #hero-product-section .hero-product-content .specs .spec-item .label {
   font-size: 0.8rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
-.page-index-2 .hero-product .hero-product-content .specs .spec-item .value {
+.page-index-2 #hero-product-section .hero-product-content .specs .spec-item .value {
   font-family: "Playfair Display", serif;
   font-size: 1.6rem;
   color: #f6e6b4;
@@ -2465,6 +2465,10 @@ a {
   text-align: left;
   height: auto;
   border: none;
+  box-shadow: none;
+}
+.page-index-2 .product-card:hover {
+  box-shadow: none;
 }
 .page-index-2 .product-card .product-img {
   height: 480px;
@@ -2754,9 +2758,6 @@ a {
 }
 .page-index-2 footer .copyright a:hover {
   color: #e2c076;
-}
-.page-index-2 .section-padding {
-  padding: 120px 0;
 }
 .page-index-2 .bg-darker {
   background-color: #04100d;

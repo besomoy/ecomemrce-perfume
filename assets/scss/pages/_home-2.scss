@@ -546,7 +546,7 @@
         }
     }
 
-    .hero-product {
+    #hero-product-section {
         background: linear-gradient(135deg, $secondary-deep 0%, #020b09 100%);
         position: relative;
         border-top: 1px solid rgba(226, 192, 118, 0.1);
@@ -631,6 +631,11 @@
         text-align: left;
         height: auto;
         border: none;
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: none;
+        }
 
         .product-img {
             height: 480px;
@@ -972,10 +977,6 @@
     }
 
     // --- Utility & Animations ---
-    .section-padding {
-        padding: 120px 0;
-    }
-
     .bg-darker {
         background-color: $neutral-900;
     }
